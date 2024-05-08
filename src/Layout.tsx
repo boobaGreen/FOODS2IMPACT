@@ -1,11 +1,12 @@
 import { ReactNode } from "react";
+import { GameStatus } from "./lib/types/types";
 
 type TLayout = {
   userName: string;
   points: number;
   level: number;
   handleRemoveUser: () => void;
-  gameStatus: string;
+  gameStatus: GameStatus;
   children: ReactNode;
 };
 

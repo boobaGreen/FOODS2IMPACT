@@ -3,9 +3,12 @@ import QuizQuestion from "./QuizQuestion";
 import { quiz } from "./quiz/level1/quiz";
 import useDecryptedAnswers from "./lib/hooks/useDecryptedAnswers";
 import ScorePopup from "./ScorePopup";
+import App from "./App";
+import { GameStatus } from "./lib/types/types";
 
 type TQuizProps = {
   setUser: React.Dispatch<React.SetStateAction<UserType>>;
+  setGameStatus: React.Dispatch<React.SetStateAction<GameStatus>>; // Usa GameStatus per definire il tipo
 };
 type UserType = {
   name: string;
@@ -13,27 +16,31 @@ type UserType = {
   level: number;
 };
 
-export const Quiz: React.FC<TQuizProps> = ({ setUser }) => {
+export const Quiz: React.FC<TQuizProps> = ({ setUser, setGameStatus }) => {
   const solutions = useDecryptedAnswers();
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [score, setScore] = useState(0);
+  const [points, setPoints] = useState(0);
   const [scoreKey, setScoreKey] = useState(Date.now()); // Aggiungi un nuovo stato per la chiave del punteggio
 
   const handleConfirm = (selectedAnswer: string) => {
     if (selectedAnswer === solutions[currentQuestion]) {
-      setUser((prevUser) => ({ ...prevUser, points: prevUser.points + 1 }));
-      setScore(1);
+      setUser((prevUser) => {
+        const newPoints = prevUser.points + 1;
+        const newLevel = newPoints >= 6 ? prevUser.level + 1 : prevUser.level;
+        return { ...prevUser, points: newPoints, level: newLevel };
+      });
+      setPoints(1);
     } else {
-      setScore(-1);
+      setPoints(-1);
     }
-    setScoreKey(Date.now()); // Aggiorna la chiave del punteggio ogni volta che il punteggio cambia
+    setScoreKey(Date.now());
     setCurrentQuestion(currentQuestion + 1);
   };
 
   if (currentQuestion >= quiz.length) {
-    return <div>Hai completato il quiz! </div>;
+    setGameStatus(GameStatus.EndGame);
+    return <App />;
   }
-
   const { question, answers } = quiz[currentQuestion];
 
   return (
@@ -47,9 +54,9 @@ export const Quiz: React.FC<TQuizProps> = ({ setUser }) => {
       />
       <ScorePopup
         key={scoreKey}
-        score={score}
-        color={score > 0 ? "green" : "red"}
-      />{" "}
+        points={points}
+        color={points > 0 ? "green" : "red"}
+      />
     </main>
   );
 };

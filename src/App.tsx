@@ -2,11 +2,15 @@ import { SetStateAction, useState } from "react";
 import { useLocalStorage } from "usehooks-ts";
 import Layout from "./Layout";
 import { Quiz } from "./Quiz";
-import EndGame from "./EndGame";
+
 import UserInput from "./UserInput";
 
+import { GameStatus } from "./lib/types/types";
+import EndGame from "./EndGame";
+
 const App = () => {
-  const [gameStatus, setGameStatus] = useState("quiz");
+  const [gameStatus, setGameStatus] = useState(GameStatus.Quiz);
+
   const [user, setUser, removeUser] = useLocalStorage("user", {
     name: "",
     points: 0,
@@ -24,7 +28,7 @@ const App = () => {
 
   const handleSubmit = () => {
     setUser({ name: inputValue, points: 0, level: 0 });
-    setGameStatus("quiz");
+    setGameStatus(GameStatus.Quiz);
   };
 
   const handleRemoveUser = () => {
@@ -33,7 +37,7 @@ const App = () => {
 
   const confirmRemoveUser = () => {
     removeUser();
-    setGameStatus("cover");
+    setGameStatus(GameStatus.Cover);
     setShowConfirmationModal(false);
   };
 
@@ -56,8 +60,16 @@ const App = () => {
         />
       ) : (
         <>
-          {gameStatus === "quiz" ? <Quiz setUser={setUser} /> : null}
-          {gameStatus === "endGame" ? <EndGame /> : null}
+          {gameStatus === "quiz" ? (
+            <Quiz setUser={setUser} setGameStatus={setGameStatus} />
+          ) : null}
+          {gameStatus === "endGame" ? (
+            <EndGame
+              points={user.points}
+              level={user.level}
+              setGameStatus={setGameStatus}
+            />
+          ) : null}
 
           {showConfirmationModal ? (
             <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
