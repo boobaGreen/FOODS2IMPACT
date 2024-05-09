@@ -1,4 +1,5 @@
 import { SetStateAction } from "react";
+import { FaPlay } from "react-icons/fa";
 
 type TuserInput = {
   handleInputChange: (event: {
@@ -12,15 +13,14 @@ export default function UserInput({
   handleSubmit,
 }: TuserInput) {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col gap-10">
       <div className="flex justify-center">
-        <p>Nome</p>
+        <input onChange={handleInputChange} placeholder="Nome" />
       </div>
       <div className="flex justify-center">
-        <input onChange={handleInputChange} />
-      </div>
-      <div className="flex justify-center">
-        <button onClick={handleSubmit}>invia</button>
+        <button onClick={handleSubmit}>
+          <FaPlay />
+        </button>
       </div>
     </div>
   );

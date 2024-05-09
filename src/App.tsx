@@ -12,7 +12,7 @@ const App = () => {
   const [gameStatus, setGameStatus] = useState(GameStatus.Quiz);
   const [user, setUser, removeUser] = useLocalStorage("user", {
     name: "",
-    points: 0,
+
     singleGamePoints: 0,
     level: 0,
   });
@@ -27,7 +27,7 @@ const App = () => {
   };
 
   const handleSubmit = () => {
-    setUser({ name: inputValue, points: 0, singleGamePoints: 0, level: 0 });
+    setUser({ name: inputValue, singleGamePoints: 0, level: 0 });
     setGameStatus(GameStatus.Quiz);
   };
 
@@ -59,15 +59,10 @@ const App = () => {
       ) : (
         <>
           {gameStatus === "quiz" ? (
-            <Quiz setUser={setUser} setGameStatus={setGameStatus} />
+            <Quiz user={user} setUser={setUser} setGameStatus={setGameStatus} />
           ) : null}
           {gameStatus === "endGame" ? (
-            <EndGame
-              points={user.points}
-              singleGamePoints={user.singleGamePoints}
-              level={user.level}
-              setGameStatus={setGameStatus}
-            />
+            <EndGame user={user} setGameStatus={setGameStatus} />
           ) : null}
 
           {showConfirmationModal ? (

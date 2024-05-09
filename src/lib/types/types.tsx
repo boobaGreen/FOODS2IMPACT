@@ -4,9 +4,9 @@ export enum GameStatus {
   Cover = "cover",
 }
 
-export type Tuser = {
+export type TUser = {
   name: string;
-  points: number;
+
   singleGamePoints: number;
   level: number;
 };

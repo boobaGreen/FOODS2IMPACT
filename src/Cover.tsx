@@ -1,3 +1,4 @@
+
 type TCover = {
   gameStatus: string;
   setGameStatus: (newStatus: string) => void;

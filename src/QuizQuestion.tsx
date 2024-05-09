@@ -24,7 +24,7 @@ const QuizQuestion: React.FC<TQuizQuestionProps> = ({
   const handleConfirmClick = () => {
     if (selectedAnswer) {
       onConfirm(selectedAnswer);
-      setSelectedAnswer(null); // Reimposta selectedAnswer a null dopo che una risposta è stata confermata
+      setSelectedAnswer(null);
     }
   };
 
@@ -48,7 +48,7 @@ const QuizQuestion: React.FC<TQuizQuestionProps> = ({
       <button
         className="mt-auto p-2 bg-green-500 text-white"
         onClick={handleConfirmClick}
-        disabled={!selectedAnswer} // Il pulsante è disabilitato se non è stata selezionata alcuna risposta
+        disabled={!selectedAnswer}
       >
         Conferma
       </button>

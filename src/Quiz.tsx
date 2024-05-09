@@ -5,20 +5,19 @@ import useDecryptedAnswers from "./lib/hooks/useDecryptedAnswers";
 import ScorePopup from "./ScorePopup";
 import App from "./App";
 import { GameStatus } from "./lib/types/types";
+import { TUser } from "./lib/types/types";
 
 type TQuizProps = {
-  setUser: React.Dispatch<React.SetStateAction<UserType>>;
+  user: TUser;
+  setUser: React.Dispatch<React.SetStateAction<TUser>>;
   setGameStatus: React.Dispatch<React.SetStateAction<GameStatus>>;
 };
 
-type UserType = {
-  name: string;
-  points: number;
-  singleGamePoints: number;
-  level: number;
-};
-
-export const Quiz: React.FC<TQuizProps> = ({ setUser, setGameStatus }) => {
+export const Quiz: React.FC<TQuizProps> = ({
+  user,
+  setUser,
+  setGameStatus,
+}) => {
   const solutions = useDecryptedAnswers();
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [forPopUp, setforPopup] = useState<boolean>(false);
@@ -27,13 +26,13 @@ export const Quiz: React.FC<TQuizProps> = ({ setUser, setGameStatus }) => {
   const handleConfirm = (selectedAnswer: string) => {
     if (selectedAnswer === solutions[currentQuestion]) {
       setforPopup(true);
-      setUser((prevUser) => {
+      setUser((prevUser: TUser) => {
         const newPoints = prevUser.singleGamePoints + 1;
         return { ...prevUser, singleGamePoints: newPoints };
       });
     } else {
       setforPopup(false);
-      setUser((prevUser) => {
+      setUser((prevUser: TUser) => {
         const newPoints = prevUser.singleGamePoints - 1;
         return { ...prevUser, singleGamePoints: newPoints };
       });
@@ -43,6 +42,12 @@ export const Quiz: React.FC<TQuizProps> = ({ setUser, setGameStatus }) => {
   };
 
   if (currentQuestion >= quiz.length) {
+    if (user.singleGamePoints > 7) {
+      setUser((prevUser: TUser) => {
+        const newLevel = prevUser.level + 1;
+        return { ...prevUser, level: newLevel };
+      });
+    }
     setGameStatus(GameStatus.EndGame);
     return <App />;
   }

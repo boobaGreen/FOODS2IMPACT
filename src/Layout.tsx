@@ -1,9 +1,10 @@
 import { ReactNode } from "react";
 import { GameStatus } from "./lib/types/types";
-import { Tuser } from "./lib/types/types";
+import { TUser } from "./lib/types/types";
+import { FaTrash } from "react-icons/fa";
 
 type TLayout = {
-  user: Tuser;
+  user: TUser;
   gameStatus: GameStatus;
   children: ReactNode;
   handleRemoveUser: () => void;
@@ -20,15 +21,16 @@ const Layout = ({ user, handleRemoveUser, gameStatus, children }: TLayout) => {
               <div className="flex gap-3">
                 <div>{user.name}</div>
 
-                <button onClick={handleRemoveUser}>R</button>
+                <button onClick={handleRemoveUser}>
+                  <FaTrash />
+                </button>
               </div>
             ) : null}
           </div>
           <div className="flex justify-end">
             {user.name !== "" ? (
               <div className="flex gap-3">
-                <div>totpoints {user.points}</div>
-                <div>gamepoints {user.singleGamePoints}</div>
+                <div>points {user.singleGamePoints}</div>
                 <div>level {user.level}</div>
               </div>
             ) : null}
