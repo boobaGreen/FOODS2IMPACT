@@ -6,7 +6,6 @@ export enum GameStatus {
 
 export type TUser = {
   name: string;
-
   singleGamePoints: number;
   level: number;
 };

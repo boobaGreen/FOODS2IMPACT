@@ -17,9 +17,9 @@ const Layout = ({ user, handleRemoveUser, gameStatus, children }: TLayout) => {
         <header>
           <div className="flex justify-between">
             HEADER
-            {user.name !== "" ? (
+            {user?.name !== "" ? (
               <div className="flex gap-3">
-                <div>{user.name}</div>
+                <div>{user?.name}</div>
 
                 <button onClick={handleRemoveUser}>
                   <FaTrash />
@@ -28,10 +28,10 @@ const Layout = ({ user, handleRemoveUser, gameStatus, children }: TLayout) => {
             ) : null}
           </div>
           <div className="flex justify-end">
-            {user.name !== "" ? (
+            {user?.name !== "" ? (
               <div className="flex gap-3">
-                <div>points {user.singleGamePoints}</div>
-                <div>level {user.level}</div>
+                <div>points {user?.singleGamePoints}</div>
+                <div>level {user?.level}</div>
               </div>
             ) : null}
           </div>

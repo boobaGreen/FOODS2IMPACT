@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import QuizQuestion from "./QuizQuestion";
 import { quiz } from "./quiz/level1/quiz";
 import useDecryptedAnswers from "./lib/hooks/useDecryptedAnswers";
 import ScorePopup from "./ScorePopup";
-import App from "./App";
 import { GameStatus } from "./lib/types/types";
 import { TUser } from "./lib/types/types";
 
@@ -41,27 +40,34 @@ export const Quiz: React.FC<TQuizProps> = ({
     setCurrentQuestion(currentQuestion + 1);
   };
 
-  if (currentQuestion >= quiz.length) {
-    if (user.singleGamePoints > 7) {
-      setUser((prevUser: TUser) => {
-        const newLevel = prevUser.level + 1;
-        return { ...prevUser, level: newLevel };
-      });
+  useEffect(() => {
+    if (currentQuestion >= quiz.length) {
+      if (user.singleGamePoints > 7) {
+        setUser((prevUser: TUser) => {
+          const newLevel = prevUser.level + 1;
+          return { ...prevUser, level: newLevel };
+        });
+      }
+      setGameStatus(GameStatus.EndGame);
     }
-    setGameStatus(GameStatus.EndGame);
-    return <App />;
+  }, [currentQuestion, user.singleGamePoints, setUser, setGameStatus]);
+
+  let question, answers;
+  if (currentQuestion < quiz.length) {
+    ({ question, answers } = quiz[currentQuestion]);
   }
-  const { question, answers } = quiz[currentQuestion];
 
   return (
     <main className="flex flex-col h-full">
-      <QuizQuestion
-        question={question}
-        answers={answers}
-        questionNumber={currentQuestion + 1}
-        totalQuestions={quiz.length}
-        onConfirm={handleConfirm}
-      />
+      {question && answers && (
+        <QuizQuestion
+          question={question}
+          answers={answers}
+          questionNumber={currentQuestion + 1}
+          totalQuestions={quiz.length}
+          onConfirm={handleConfirm}
+        />
+      )}
       {currentQuestion > 0 ? (
         <ScorePopup
           key={scoreKey}

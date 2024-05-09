@@ -6,17 +6,17 @@ import { TwitterShareButton } from "react-share";
 type EndQuizProps = {
   user: TUser;
   setGameStatus: React.Dispatch<React.SetStateAction<GameStatus>>;
+  setUser: React.Dispatch<React.SetStateAction<TUser>>;
 };
 
-const EndGame: FC<EndQuizProps> = ({ user, setGameStatus }) => {
+const EndGame: FC<EndQuizProps> = ({ user, setGameStatus, setUser }) => {
   function handleSetToQuiz() {
     setGameStatus(GameStatus.Quiz);
+    setUser((user) => ({ ...user, singleGamePoints: 0 }));
   }
 
-  const shareUrl = "http://your-app-homepage.com"; // URL da condividere
-  const title = `Ho superato con successo il livello ${
-    user.level - 1
-  } sulla conoscenza del foodimpact. Vai sul sito ${shareUrl} se vuoi provare anche tu!`; // Titolo del post
+  const shareUrl = "http://your-app-homepage.com"; // URL to share
+  const title = `Ho superato con successo il livello ${user.level} sulla conoscenza del foodimpact. Vai sul sito ${shareUrl} se vuoi provare anche tu!`; // Post title
 
   return (
     <div>
@@ -31,6 +31,7 @@ const EndGame: FC<EndQuizProps> = ({ user, setGameStatus }) => {
           <section>
             <>
               <p>Sei pronto per il prossimo livello?</p>
+              <button onClick={handleSetToQuiz}>riprova</button>
             </>
           </section>
           <TwitterShareButton
@@ -38,7 +39,7 @@ const EndGame: FC<EndQuizProps> = ({ user, setGameStatus }) => {
             title={title}
             className="Demo__some-network__share-button"
           >
-            <button>Condividi su Twitter</button>
+            Condividi su Twitter
           </TwitterShareButton>
         </>
       ) : (
