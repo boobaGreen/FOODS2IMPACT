@@ -20,8 +20,7 @@ const EndGame: FC<EndQuizProps> = ({ user, setGameStatus, setUser }) => {
 
   return (
     <div>
-      <p>Hai completato il quiz!</p>
-      <p>Hai ottenuto un punteggio di {user.singleGamePoints} su 10.</p>
+      {/* <p>Hai ottenuto un punteggio di {user.singleGamePoints} su 10.</p> */}
       {user.singleGamePoints >= 6 ? (
         <>
           <p>
@@ -31,7 +30,7 @@ const EndGame: FC<EndQuizProps> = ({ user, setGameStatus, setUser }) => {
           <section>
             <>
               <p>Sei pronto per il prossimo livello?</p>
-              <button onClick={handleSetToQuiz}>riprova</button>
+              <button onClick={handleSetToQuiz}>Inizia</button>
             </>
           </section>
           <TwitterShareButton
@@ -45,7 +44,7 @@ const EndGame: FC<EndQuizProps> = ({ user, setGameStatus, setUser }) => {
       ) : (
         <>
           <p>Non hai superato il quiz. Non ti scoraggiare, riprova!</p>
-          <button onClick={handleSetToQuiz}>riprova</button>
+          <button onClick={handleSetToQuiz}>Riprova</button>
         </>
       )}
     </div>
