@@ -1,19 +1,19 @@
 import { SetStateAction, useState } from "react";
 import { useLocalStorage } from "usehooks-ts";
-import Layout from "./Layout";
-import { Quiz } from "./Quiz";
-
-import UserInput from "./UserInput";
 
 import { GameStatus } from "./lib/types/types";
+
+import Layout from "./Layout";
+import { Quiz } from "./Quiz";
+import UserInput from "./UserInput";
 import EndGame from "./EndGame";
 
 const App = () => {
   const [gameStatus, setGameStatus] = useState(GameStatus.Quiz);
-
   const [user, setUser, removeUser] = useLocalStorage("user", {
     name: "",
     points: 0,
+    singleGamePoints: 0,
     level: 0,
   });
 
@@ -27,7 +27,7 @@ const App = () => {
   };
 
   const handleSubmit = () => {
-    setUser({ name: inputValue, points: 0, level: 0 });
+    setUser({ name: inputValue, points: 0, singleGamePoints: 0, level: 0 });
     setGameStatus(GameStatus.Quiz);
   };
 
@@ -47,9 +47,7 @@ const App = () => {
   console.log(user);
   return (
     <Layout
-      userName={user.name}
-      points={user.points}
-      level={user.level}
+      user={user}
       handleRemoveUser={handleRemoveUser}
       gameStatus={gameStatus}
     >
@@ -66,6 +64,7 @@ const App = () => {
           {gameStatus === "endGame" ? (
             <EndGame
               points={user.points}
+              singleGamePoints={user.singleGamePoints}
               level={user.level}
               setGameStatus={setGameStatus}
             />

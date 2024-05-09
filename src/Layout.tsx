@@ -1,42 +1,35 @@
 import { ReactNode } from "react";
 import { GameStatus } from "./lib/types/types";
+import { Tuser } from "./lib/types/types";
 
 type TLayout = {
-  userName: string;
-  points: number;
-  level: number;
-  handleRemoveUser: () => void;
+  user: Tuser;
   gameStatus: GameStatus;
   children: ReactNode;
+  handleRemoveUser: () => void;
 };
 
-const Layout = ({
-  userName,
-  points,
-  level,
-  handleRemoveUser,
-  gameStatus,
-  children,
-}: TLayout) => {
+const Layout = ({ user, handleRemoveUser, gameStatus, children }: TLayout) => {
   return (
     <div className="h-[100vh] flex flex-col bg-violet-300 p-4">
       <div className="flex flex-col justify-between h-full">
         <header>
           <div className="flex justify-between">
             HEADER
-            {userName !== "" ? (
+            {user.name !== "" ? (
               <div className="flex gap-3">
-                <div>{userName}</div>
+                <div>{user.name}</div>
 
                 <button onClick={handleRemoveUser}>R</button>
               </div>
             ) : null}
           </div>
           <div className="flex justify-end">
-            {userName !== "" ? (
+            {user.name !== "" ? (
               <div className="flex gap-3">
-                <div>points {points}</div>
-                <div>level {level}</div>
+                <div>totpoints {user.points}</div>
+                <div>gamepoints {user.singleGamePoints}</div>
+                <div>level {user.level}</div>
               </div>
             ) : null}
           </div>
