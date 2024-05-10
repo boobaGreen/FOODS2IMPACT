@@ -28,7 +28,7 @@ function Footer(): JSX.Element {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="w-full ">
+    <div className="w-full">
       <div className="flex flex-col content-center justify-center ">
         <div className="flex justify-center w-auto">
           <ul className="flex gap-2 sm:gap-4">

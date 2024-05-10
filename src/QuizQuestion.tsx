@@ -30,7 +30,7 @@ const QuizQuestion: React.FC<TQuizQuestionProps> = ({
 
   return (
     <div className="flex flex-col h-full mt-4">
-      <h3 className="text-base text-[#202020]  text-pretty mb-2 ">
+      <h3 className="text-base text-[#202020]  text-pretty mb-10 ">
         {question}
       </h3>
       <div className="relative pt-1">
@@ -44,7 +44,7 @@ const QuizQuestion: React.FC<TQuizQuestionProps> = ({
       {answers.map((answer, index) => (
         <button
           key={index}
-          className={`text-pretty mb-2 p-1 text-sm ${
+          className={`text-pretty mb-2 p-1 text-md ${
             selectedAnswer === answer
               ? "bg-[#78e6e2] text-[#454444]] border-[#454444] border-solid border-2"
               : "bg-[#31807d] text-[white] border-[#454444] border-solid border-2"
@@ -54,14 +54,17 @@ const QuizQuestion: React.FC<TQuizQuestionProps> = ({
           {answer}
         </button>
       ))}
-
-      <button
-        className="mt-2 mb-4 p-2 bg-[#78e6e2] text-[#454444] border-[#454444] border-solid border-2"
-        onClick={handleConfirmClick}
-        disabled={!selectedAnswer}
-      >
-        Conferma
-      </button>
+      {selectedAnswer && (
+        <button
+          className={`mt-2 mb-4 p-2 text-[#454444] border-[#454444] border-solid border-2 ${
+            !selectedAnswer ? "bg-[#yourDisabledColor]" : "bg-[#78e6e2]"
+          }`}
+          onClick={handleConfirmClick}
+          disabled={!selectedAnswer}
+        >
+          Conferma
+        </button>
+      )}
     </div>
   );
 };
