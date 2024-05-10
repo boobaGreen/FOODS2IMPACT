@@ -31,8 +31,3 @@ const EndGame: FC<EndQuizProps> = ({ user, setGameStatus, setUser }) => {
 
 export default EndGame;
 
-// #3e6c6a
-// #454444
-// #38ded9
-// #35c4c4
-// #3a908d

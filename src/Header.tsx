@@ -12,24 +12,26 @@ function Header({ user, handleRemoveUser }: THeader) {
   const handleHome = () => {};
   return (
     <div>
-      <header className="flex justify-between">
+      <header className="flex justify-between px-6">
         <button onClick={handleHome} className="flex justify-center w-[10rem]">
           <Logo />
         </button>
         {user?.name ? (
-          <div className="flex flex-col w-40 text-xl text-[#454444] text-pretty">
-            <div className="flex justify-center gap-2">
-              <p>Points</p>
-              <p>{user?.singleGamePoints}</p>
+          <div className="flex flex-col text-xl text-[#454444] w-80 text-pretty">
+            <div className="flex justify-end gap-6">
+              <div className="flex justify-center gap-2">
+                <p>Points</p>
+                <p>{user?.singleGamePoints}</p>
+              </div>
+              <div className="flex justify-center gap-2">
+                <p>Level</p>
+                <p>{user?.level}</p>
+              </div>
             </div>
-            <div className="flex justify-center gap-2">
-              <p>Level</p>
-              <p>{user?.level}</p>
-            </div>
-            <div className="flex w-full justify-between p-4 text-base gap-2 ">
+            <div className="mt-6 flex w-full justify-end text-base gap-2 ">
               <div>{user?.name.toUpperCase()}</div>
               <div>
-                <button onClick={handleRemoveUser} className="mr-4">
+                <button onClick={handleRemoveUser} className="">
                   <FaTrash color="#35c4c4" />
                 </button>
               </div>
