@@ -54,6 +54,7 @@ const QuizQuestion: React.FC<TQuizQuestionProps> = ({
           {answer}
         </button>
       ))}
+
       <button
         className="mt-6 p-2 bg-[#78e6e2] text-[#454444] border-[#454444] border-solid border-2"
         onClick={handleConfirmClick}
