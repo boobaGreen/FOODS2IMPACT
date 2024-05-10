@@ -28,7 +28,7 @@ function Footer(): JSX.Element {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="w-full h-auto">
+    <div className="w-full ">
       <div className="flex flex-col content-center justify-center ">
         <div className="flex justify-center w-auto">
           <ul className="flex gap-2 sm:gap-4">
@@ -45,7 +45,7 @@ function Footer(): JSX.Element {
           </ul>
         </div>
         <div className="flex justify-center w-auto text-[#454444]">
-          <p className="mt-4 text-sm sm:text-base md:text-xl text-[#454444]">
+          <p className="mt-1 text-sm sm:text-base md:text-xl text-[#454444]">
             © {currentYear} Copyright Dall'Ara Claudio
           </p>
         </div>

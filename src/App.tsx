@@ -7,6 +7,7 @@ import Layout from "./Layout";
 import { Quiz } from "./Quiz";
 import UserInput from "./UserInput";
 import EndGame from "./EndGame";
+import Modal from "./Modal";
 
 const App = () => {
   const [gameStatus, setGameStatus] = useState(GameStatus.Quiz);
@@ -69,23 +70,10 @@ const App = () => {
           ) : null}
 
           {showConfirmationModal ? (
-            <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-              <div className="bg-white p-6 rounded-lg">
-                <p>Sei sicuro di voler rimuovere l'utente?</p>
-                <button
-                  className="bg-blue-500 text-white px-4 py-2 rounded mt-4"
-                  onClick={confirmRemoveUser}
-                >
-                  Conferma
-                </button>
-                <button
-                  className="bg-red-500 text-white px-4 py-2 rounded mt-4"
-                  onClick={cancelRemoveUser}
-                >
-                  Annulla
-                </button>
-              </div>
-            </div>
+            <Modal
+              confirmRemoveUser={confirmRemoveUser}
+              cancelRemoveUser={cancelRemoveUser}
+            />
           ) : null}
         </>
       )}

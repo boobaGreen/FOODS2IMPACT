@@ -12,8 +12,8 @@ type TLayout = {
 
 const Layout = ({ user, handleRemoveUser, children }: TLayout) => {
   return (
-    <div className="h-[100vh] flex flex-col bg-[#3a908d] p-4">
-      <div className="flex flex-col justify-between h-full">
+    <div className="h-[100vh] flex flex-col bg-[#3a908d] p-4 overflow-hidden">
+      <div className="flex flex-col justify-around h-full">
         <Header
           user={user}
           handleRemoveUser={handleRemoveUser}
