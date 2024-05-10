@@ -30,15 +30,24 @@ const QuizQuestion: React.FC<TQuizQuestionProps> = ({
 
   return (
     <div className="flex flex-col h-full">
-      <h2 className="text-2xl mb-4">
-        Domanda {questionNumber}/{totalQuestions}
-      </h2>
-      <h3 className="text-xl mb-4">{question}</h3>
+      <h3 className="text-xl text-[#202020] mb-4 text-pretty my-6">
+        {question}
+      </h3>
+      <div className="relative pt-1">
+        <div className="overflow-hidden h-2 mb-4 text-xs flex rounded bg-[#3e6c6a]">
+          <div
+            style={{ width: `${(questionNumber / totalQuestions) * 100}%` }}
+            className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-[#38ded9]"
+          ></div>
+        </div>
+      </div>
       {answers.map((answer, index) => (
         <button
           key={index}
-          className={`mb-2 p-2 ${
-            selectedAnswer === answer ? "bg-blue-500 text-white" : "bg-white"
+          className={`text-pretty mb-2 p-2 ${
+            selectedAnswer === answer
+              ? "bg-[#78e6e2] text-[#454444]] border-[#454444] border-solid border-2"
+              : "bg-[#31807d] text-[white] border-[#454444] border-solid border-2"
           }`}
           onClick={() => handleAnswerClick(answer)}
         >
@@ -46,7 +55,7 @@ const QuizQuestion: React.FC<TQuizQuestionProps> = ({
         </button>
       ))}
       <button
-        className="mt-auto p-2 bg-green-500 text-white"
+        className="mt-6 p-2 bg-[#78e6e2] text-[#454444] border-[#454444] border-solid border-2"
         onClick={handleConfirmClick}
         disabled={!selectedAnswer}
       >

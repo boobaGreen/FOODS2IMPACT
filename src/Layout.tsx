@@ -1,48 +1,34 @@
 import { ReactNode } from "react";
-import { GameStatus } from "./lib/types/types";
 import { TUser } from "./lib/types/types";
-import { FaTrash } from "react-icons/fa";
+
+import Footer from "./Footer";
+import Header from "./Header";
 
 type TLayout = {
   user: TUser;
-  gameStatus: GameStatus;
   children: ReactNode;
   handleRemoveUser: () => void;
 };
 
-const Layout = ({ user, handleRemoveUser, gameStatus, children }: TLayout) => {
+const Layout = ({ user, handleRemoveUser, children }: TLayout) => {
   return (
-    <div className="h-[100vh] flex flex-col bg-violet-300 p-4">
+    <div className="h-[100vh] flex flex-col bg-[#3a908d] p-4">
       <div className="flex flex-col justify-between h-full">
-        <header>
-          <div className="flex justify-between">
-            HEADER
-            {user?.name !== "" ? (
-              <div className="flex gap-3">
-                <div>{user?.name}</div>
-
-                <button onClick={handleRemoveUser}>
-                  <FaTrash />
-                </button>
-              </div>
-            ) : null}
-          </div>
-          <div className="flex justify-end">
-            {user?.name !== "" ? (
-              <div className="flex gap-3">
-                <div>points {user?.singleGamePoints}</div>
-                <div>level {user?.level}</div>
-              </div>
-            ) : null}
-          </div>
-          <h1 className="mt-8 flex justify-center text-3xl">
-            {gameStatus.toUpperCase()}
-          </h1>
-        </header>
+        <Header
+          user={user}
+          handleRemoveUser={handleRemoveUser}
+          children={children}
+        />
         <main>{children}</main>
-        <footer>FOOTER</footer>
+        <Footer />
       </div>
     </div>
   );
 };
 export default Layout;
+
+// #3e6c6a
+// #454444
+// #38ded9
+// #35c4c4
+// #3a908d

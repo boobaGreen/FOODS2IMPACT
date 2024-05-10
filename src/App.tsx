@@ -49,11 +49,7 @@ const App = () => {
     setUser((prevUser) => ({ ...prevUser, singleGamePoints: 0 }));
   }, [setUser]);
   return (
-    <Layout
-      user={user}
-      handleRemoveUser={handleRemoveUser}
-      gameStatus={gameStatus}
-    >
+    <Layout user={user} handleRemoveUser={handleRemoveUser}>
       {user?.name === "" ? (
         <UserInput
           handleSubmit={handleSubmit}
