@@ -13,7 +13,7 @@ export default function UserInput({
   handleSubmit,
 }: TuserInput) {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 mt-12">
       <div className="flex justify-center text-[#38ded9]">
         <input
           onChange={handleInputChange}

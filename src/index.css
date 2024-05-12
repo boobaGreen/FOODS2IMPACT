@@ -14,3 +14,15 @@
     transform: translateY(-165px);
   }
 }
+
+html {
+  scroll-behavior: smooth;
+  background-color: #3a908d;
+}
+
+@supports (-webkit-text-size-adjust: none) or (-moz-text-size-adjust: none) {
+  body {
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+  }
+}

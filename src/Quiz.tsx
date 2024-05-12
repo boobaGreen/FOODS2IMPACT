@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import QuizQuestion from "./QuizQuestion";
-import { quiz } from "./quiz/level1/quiz";
 import useDecryptedAnswers from "./lib/hooks/useDecryptedAnswers";
 import ScorePopup from "./ScorePopup";
 import { GameStatus } from "./lib/types/types";
@@ -17,20 +16,46 @@ export const Quiz: React.FC<TQuizProps> = ({
   setUser,
   setGameStatus,
 }) => {
-  const solutions = useDecryptedAnswers();
+  const [quiz, setQuiz] = useState([]);
+  const solutions = useDecryptedAnswers(user.level);
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [forPopUp, setforPopup] = useState<boolean>(false);
+  const [forPopUp, setForPopup] = useState<boolean>(false);
   const [scoreKey, setScoreKey] = useState(Date.now());
+
+  useEffect(() => {
+    import(`./quiz/level${user.level}/quiz.ts`)
+      .then((module) => {
+        setQuiz(module.quiz);
+        if (currentQuestion >= module.quiz.length) {
+          if (user.singleGamePoints > 7) {
+            setUser((prevUser: TUser) => {
+              const newLevel = prevUser.level + 1;
+              return { ...prevUser, level: newLevel };
+            });
+          }
+          setGameStatus(GameStatus.EndGame);
+        }
+      })
+      .catch((error) =>
+        console.error(`Failed to load quiz for level ${user.level}`, error)
+      );
+  }, [
+    user.level,
+    currentQuestion,
+    user.singleGamePoints,
+    setUser,
+    setGameStatus,
+  ]);
 
   const handleConfirm = (selectedAnswer: string) => {
     if (selectedAnswer === solutions[currentQuestion]) {
-      setforPopup(true);
+      setForPopup(true);
       setUser((prevUser: TUser) => {
         const newPoints = prevUser.singleGamePoints + 1;
         return { ...prevUser, singleGamePoints: newPoints };
       });
     } else {
-      setforPopup(false);
+      setForPopup(false);
       setUser((prevUser: TUser) => {
         const newPoints = prevUser.singleGamePoints - 1;
         return { ...prevUser, singleGamePoints: newPoints };
@@ -39,18 +64,6 @@ export const Quiz: React.FC<TQuizProps> = ({
     setScoreKey(Date.now());
     setCurrentQuestion(currentQuestion + 1);
   };
-
-  useEffect(() => {
-    if (currentQuestion >= quiz.length) {
-      if (user.singleGamePoints > 7) {
-        setUser((prevUser: TUser) => {
-          const newLevel = prevUser.level + 1;
-          return { ...prevUser, level: newLevel };
-        });
-      }
-      setGameStatus(GameStatus.EndGame);
-    }
-  }, [currentQuestion, user.singleGamePoints, setUser, setGameStatus]);
 
   let question, answers;
   if (currentQuestion < quiz.length) {
@@ -72,7 +85,7 @@ export const Quiz: React.FC<TQuizProps> = ({
         <ScorePopup
           key={scoreKey}
           forPopUp={forPopUp}
-          color={forPopUp ? "green" : "red"}
+          color={forPopUp ? "white" : "#454444"}
         />
       ) : null}
     </main>

@@ -12,24 +12,27 @@ function Header({ user, handleRemoveUser }: THeader) {
   const handleHome = () => {};
   return (
     <div>
-      <header className="flex justify-between px-6">
-        <button onClick={handleHome} className="flex justify-center w-[10rem]">
+      <header className="flex justify-between">
+        <button
+          onClick={handleHome}
+          className="flex justify-center w-[8rem] ml-[-2rem] mt-[-1rem]"
+        >
           <Logo />
         </button>
         {user?.name ? (
-          <div className="flex flex-col text-xl text-[#454444] w-80 text-pretty">
+          <div className="flex flex-col text-sm text-[#454444] w-80 text-pretty">
             <div className="flex justify-end gap-6">
-              <div className="flex justify-center gap-2">
-                <p>Points</p>
-                <p>{user?.singleGamePoints}</p>
+              <div className="flex justify-center gap-2 ">
+                <p className="font-press-start">Points</p>
+                <p className="font-press-start">{user?.singleGamePoints}</p>
               </div>
               <div className="flex justify-center gap-2">
-                <p>Level</p>
-                <p>{user?.level}</p>
+                <p className="font-press-start">Level</p>
+                <p className="font-press-start">{user?.level}</p>
               </div>
             </div>
             <div className="mt-6 flex w-full justify-end text-base gap-2 ">
-              <div>{user?.name.toUpperCase()}</div>
+              <div className="font-press-start">{user?.name.toUpperCase()}</div>
               <div>
                 <button onClick={handleRemoveUser} className="">
                   <FaTrash color="#35c4c4" />
@@ -39,7 +42,7 @@ function Header({ user, handleRemoveUser }: THeader) {
           </div>
         ) : null}
       </header>
-      <h1 className="flex justify-center text-3xl text-[#35c4c4] mt-20">
+      <h1 className="flex justify-center text-xl md:2xl  text-[#35c4c4] mt-10 font-press-start">
         FOOD
         <span className="text-[#ffff]">(s2i)</span>
         MPACT

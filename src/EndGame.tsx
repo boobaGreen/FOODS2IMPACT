@@ -18,7 +18,7 @@ const EndGame: FC<EndQuizProps> = ({ user, setGameStatus, setUser }) => {
   }
 
   return (
-    <div className="text-white flex-col justify-between">
+    <div className="text-white flex justify-center font-press-start text-base">
       {/* <p>Hai ottenuto un punteggio di {user.singleGamePoints} su 10.</p> */}
       {user.singleGamePoints >= 6 ? (
         <Success user={user} handleSetToQuiz={handleSetToQuiz} />
@@ -30,4 +30,3 @@ const EndGame: FC<EndQuizProps> = ({ user, setGameStatus, setUser }) => {
 };
 
 export default EndGame;
-

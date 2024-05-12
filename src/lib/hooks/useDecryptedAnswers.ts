@@ -1,27 +1,37 @@
-// useDecryptedAnswers.js
-
 import { useState, useEffect } from "react";
 import CryptoJS from "crypto-js";
-import encryptedAnswers from "../../quiz/level1/solutionEncrypted";
 
-
-const useDecryptedAnswers = () => {
-  const [answers, setAnswers] = useState([]);
+const useDecryptedAnswers = (level: number): string[] => {
+  const [answers, setAnswers] = useState<string[]>([]);
 
   useEffect(() => {
-    // Chiave di crittografia per decifrare le risposte
-    const key = import.meta.env.VITE_KEY_DECRYPTION;
-
-    // Decifra le risposte corrette
-    const bytes = CryptoJS.AES.decrypt(encryptedAnswers, key);
-    const decryptedData = bytes.toString(CryptoJS.enc.Utf8);
-
-    // Parsa le risposte decifrate in un array
-    const decryptedAnswers = JSON.parse(decryptedData);
-
-    // Imposta le risposte decifrate nello stato
-    setAnswers(decryptedAnswers);
-  }, []);
+    import(`../../quiz/level${level}/solutionEncrypted`)
+      .then((module) => {
+        const key = import.meta.env.VITE_KEY_DECRYPTION as string;
+        const encryptedData = module.default.encryptedAnswers1; // Access the encrypted data
+        const bytes = CryptoJS.AES.decrypt(encryptedData, key);
+        const decryptedData = bytes.toString(CryptoJS.enc.Utf8);
+        console.log(`Decrypted data for level ${level}:`, decryptedData); // Add logging here
+        let decryptedAnswers: string[] = [];
+        if (decryptedData) {
+          try {
+            decryptedAnswers = JSON.parse(decryptedData);
+          } catch (error) {
+            console.error(
+              `Failed to parse decrypted data for level ${level}`,
+              error
+            );
+          }
+        }
+        setAnswers(decryptedAnswers);
+      })
+      .catch((error) =>
+        console.error(
+          `Failed to load encrypted solutions for level ${level}`,
+          error
+        )
+      );
+  }, [level]);
 
   return answers;
 };

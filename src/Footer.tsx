@@ -28,8 +28,11 @@ function Footer(): JSX.Element {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="w-full">
-      <div className="flex flex-col content-center justify-center ">
+    <div className="w-full font-press-start ">
+      <div className="flex flex-col items-center justify-center w-full ">
+        <p className="mt-1 text-xs md:text-sm text-[#454444] text-center">
+          Dall'Ara Claudio Copyright © {currentYear}
+        </p>
         <div className="flex justify-center w-auto">
           <ul className="flex gap-2 sm:gap-4">
             {socialLinks.map((link) => (
@@ -39,15 +42,10 @@ function Footer(): JSX.Element {
                 key={link.id}
                 className="p-2 duration-300 rounded-lg shadow-sm cursor-pointer "
               >
-                <i className="sm:text-lg md:text-xl">{link.icon}</i>
+                <i className="text-lg md:xl">{link.icon}</i>
               </a>
             ))}
           </ul>
-        </div>
-        <div className="flex justify-center w-auto text-[#454444]">
-          <p className="mt-1 text-sm sm:text-base md:text-xl text-[#454444]">
-            © {currentYear} Copyright Dall'Ara Claudio
-          </p>
         </div>
       </div>
     </div>

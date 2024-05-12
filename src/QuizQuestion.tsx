@@ -29,8 +29,8 @@ const QuizQuestion: React.FC<TQuizQuestionProps> = ({
   };
 
   return (
-    <div className="flex flex-col h-full mt-4">
-      <h3 className="text-base text-[#202020]  text-pretty mb-10 ">
+    <div className="flex flex-col h-full mt-2">
+      <h3 className="text-xs text-[#202020]  text-pretty mb-2 font-press-start ">
         {question}
       </h3>
       <div className="relative pt-1">
@@ -44,10 +44,10 @@ const QuizQuestion: React.FC<TQuizQuestionProps> = ({
       {answers.map((answer, index) => (
         <button
           key={index}
-          className={`text-pretty mb-2 p-1 text-md ${
+          className={`text-pretty mb-2 p-1 text-xs md:text-sm ${
             selectedAnswer === answer
-              ? "bg-[#78e6e2] text-[#454444]] border-[#454444] border-solid border-2"
-              : "bg-[#31807d] text-[white] border-[#454444] border-solid border-2"
+              ? "bg-[#78e6e2] text-[#454444]] border-[#454444] border-solid border-2 font-press-start"
+              : "bg-[#31807d] text-[white] border-[#454444] border-solid border-2 font-press-start"
           }`}
           onClick={() => handleAnswerClick(answer)}
         >
@@ -56,8 +56,8 @@ const QuizQuestion: React.FC<TQuizQuestionProps> = ({
       ))}
       {selectedAnswer && (
         <button
-          className={`mt-2 mb-4 p-2 text-[#454444] border-[#454444] border-solid border-2 ${
-            !selectedAnswer ? "bg-[#yourDisabledColor]" : "bg-[#78e6e2]"
+          className={`mt-2 mb-4 p-2 text-[#454444] border-[#454444] border-solid border-2 font-press-start ${
+            !selectedAnswer ? "bg-[#ffff]" : "bg-[#78e6e2]"
           }`}
           onClick={handleConfirmClick}
           disabled={!selectedAnswer}

@@ -31,7 +31,7 @@ const ScorePopup: React.FC<ScorePopupProps> = ({ forPopUp, color }) => {
           <div className="flex justify-center">
             <FaGrinTongueSquint />
           </div>
-          <p>-1</p>
+          <p></p>
         </div>
       )}
     </div>
