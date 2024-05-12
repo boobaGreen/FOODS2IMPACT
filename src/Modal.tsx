@@ -1,5 +1,3 @@
-import React from "react";
-
 type TModal = {
   confirmRemoveUser: () => void;
   cancelRemoveUser: () => void;

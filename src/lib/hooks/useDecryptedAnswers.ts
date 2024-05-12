@@ -5,7 +5,7 @@ const useDecryptedAnswers = (level: number): string[] => {
   const [answers, setAnswers] = useState<string[]>([]);
 
   useEffect(() => {
-    import(`../../quiz/level${level}/solutionEncrypted`)
+    import(`../../quiz/level${level}/solutionEncrypted.json`)
       .then((module) => {
         const key = import.meta.env.VITE_KEY_DECRYPTION as string;
         const encryptedData = module.default.encryptedAnswers; // Access the encrypted data
