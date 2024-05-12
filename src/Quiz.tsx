@@ -48,6 +48,9 @@ export const Quiz: React.FC<TQuizProps> = ({
   ]);
 
   const handleConfirm = (selectedAnswer: string) => {
+    console.log("currentQuestion", currentQuestion);
+    console.log("selectedAnswer", selectedAnswer);
+    console.log("solutions[currentQuestion]", solutions[currentQuestion]);
     if (selectedAnswer === solutions[currentQuestion]) {
       setForPopup(true);
       setUser((prevUser: TUser) => {
@@ -57,7 +60,7 @@ export const Quiz: React.FC<TQuizProps> = ({
     } else {
       setForPopup(false);
       setUser((prevUser: TUser) => {
-        const newPoints = prevUser.singleGamePoints - 1;
+        const newPoints = prevUser.singleGamePoints;
         return { ...prevUser, singleGamePoints: newPoints };
       });
     }

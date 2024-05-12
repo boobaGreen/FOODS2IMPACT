@@ -8,7 +8,7 @@ const useDecryptedAnswers = (level: number): string[] => {
     import(`../../quiz/level${level}/solutionEncrypted`)
       .then((module) => {
         const key = import.meta.env.VITE_KEY_DECRYPTION as string;
-        const encryptedData = module.default.encryptedAnswers1; // Access the encrypted data
+        const encryptedData = module.default.encryptedAnswers; // Access the encrypted data
         const bytes = CryptoJS.AES.decrypt(encryptedData, key);
         const decryptedData = bytes.toString(CryptoJS.enc.Utf8);
         console.log(`Decrypted data for level ${level}:`, decryptedData); // Add logging here
