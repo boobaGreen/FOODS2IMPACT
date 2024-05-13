@@ -12,7 +12,7 @@ export default function Success({ user, handleSetToQuiz }: TSucces) {
     <div className="flex flex-col gap-2 content-center justify-center w-full">
       <p className="flex justify-center">Congratulazioni!</p>
       <p className="flex justify-center">Livello superato</p>
-      <p className="flex justify-center">Accedi al livello {user.level + 2}</p>
+      <p className="flex justify-center">Accedi al livello {user.level}</p>
       <section className="mt-6">
         <div className="flex flex-col w-full">
           <button onClick={handleSetToQuiz} className="text-[#38ded9]">
