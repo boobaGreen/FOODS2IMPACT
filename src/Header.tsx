@@ -1,15 +1,22 @@
+// Importing necessary libraries and components
 import { FaTrash } from "react-icons/fa";
 import { TUser } from "./lib/types/types";
 import { ReactNode } from "react";
 import Logo from "./Logo";
 
+// Type definition for the props of Header component
 type THeader = {
   user: TUser;
   children: ReactNode;
   handleRemoveUser: () => void;
 };
+
+// Header component
 function Header({ user, handleRemoveUser }: THeader) {
+  // Handler for home button click (currently empty)
   const handleHome = () => {};
+
+  // Rendering the header with user information and a trash button to remove user
   return (
     <div>
       <header className="flex justify-between">

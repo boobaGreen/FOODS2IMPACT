@@ -1,11 +1,14 @@
+// Importing necessary libraries and components
 import { FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
 
+// Interface for social link data
 interface SocialLink {
   id: number;
   icon: JSX.Element;
   url: string;
 }
 
+// Array of social link data
 const socialLinks: SocialLink[] = [
   {
     id: 1,
@@ -24,9 +27,12 @@ const socialLinks: SocialLink[] = [
   },
 ];
 
+// Footer component
 function Footer(): JSX.Element {
+  // Getting the current year
   const currentYear = new Date().getFullYear();
 
+  // Rendering the footer with copyright information and social links
   return (
     <div className="w-full font-press-start ">
       <div className="flex flex-col items-center justify-center w-full ">

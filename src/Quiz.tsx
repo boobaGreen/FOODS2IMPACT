@@ -1,3 +1,4 @@
+// Importing necessary libraries and components
 import React, { useState, useEffect } from "react";
 import QuizQuestion from "./QuizQuestion";
 import useDecryptedAnswers from "./lib/hooks/useDecryptedAnswers";
@@ -5,23 +6,27 @@ import ScorePopup from "./ScorePopup";
 import { GameStatus } from "./lib/types/types";
 import { TUser } from "./lib/types/types";
 
+// Type definition for the props of Quiz component
 type TQuizProps = {
   user: TUser;
   setUser: React.Dispatch<React.SetStateAction<TUser>>;
   setGameStatus: React.Dispatch<React.SetStateAction<GameStatus>>;
 };
 
+// Quiz component
 export const Quiz: React.FC<TQuizProps> = ({
   user,
   setUser,
   setGameStatus,
 }) => {
+  // State variables for the quiz
   const [quiz, setQuiz] = useState([]);
   const solutions = useDecryptedAnswers(user.level);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [forPopUp, setForPopup] = useState<boolean>(false);
   const [scoreKey, setScoreKey] = useState(Date.now());
 
+  // Effect hook to load the quiz for the current level
   useEffect(() => {
     import(`./quiz/level${user.level}/quiz.ts`)
       .then((module) => {
@@ -29,7 +34,10 @@ export const Quiz: React.FC<TQuizProps> = ({
         if (currentQuestion >= module.quiz.length) {
           if (user.singleGamePoints > 7) {
             setUser((prevUser: TUser) => {
-              const newLevel = prevUser.level + 1;
+              let newLevel = prevUser.level + 1;
+              if (newLevel > 3) {
+                newLevel = 1;
+              }
               return { ...prevUser, level: newLevel };
             });
           }
@@ -47,10 +55,8 @@ export const Quiz: React.FC<TQuizProps> = ({
     setGameStatus,
   ]);
 
+  // Function to handle the confirmation of an answer
   const handleConfirm = (selectedAnswer: string) => {
-    console.log("currentQuestion", currentQuestion);
-    console.log("selectedAnswer", selectedAnswer);
-    console.log("solutions[currentQuestion]", solutions[currentQuestion]);
     if (selectedAnswer === solutions[currentQuestion]) {
       setForPopup(true);
       setUser((prevUser: TUser) => {
@@ -68,11 +74,13 @@ export const Quiz: React.FC<TQuizProps> = ({
     setCurrentQuestion(currentQuestion + 1);
   };
 
+  // Extracting the current question and answers
   let question, answers;
   if (currentQuestion < quiz.length) {
     ({ question, answers } = quiz[currentQuestion]);
   }
 
+  // Rendering the Quiz component
   return (
     <main className="flex flex-col h-full">
       {question && answers && (
