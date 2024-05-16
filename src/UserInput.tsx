@@ -1,48 +1,44 @@
-// Importing necessary libraries and icons
-import { TwitterShareButton } from "react-share";
-import { FiTwitter } from "react-icons/fi";
-import { TUser } from "./lib/types/types";
+// Import SetStateAction from React for typing the state update function
+import { SetStateAction } from "react";
 
-// Type definition for the props of Success component
-type TSucces = {
-  user: TUser;
-  handleSetToQuiz: () => void;
+// Import FaPlay from react-icons for the play button
+import { FaPlay } from "react-icons/fa";
+
+// Define a type for the props that UserInput component will receive
+type TuserInput = {
+  // handleInputChange is a function that will be called when the input field value changes
+  // It receives an event object and doesn't return anything
+  handleInputChange: (event: {
+    target: { value: SetStateAction<string> };
+  }) => void;
+
+  // handleSubmit is a function that will be called when the form is submitted
+  // It doesn't receive any arguments and doesn't return anything
+  handleSubmit: () => void;
 };
 
-// Success component
-export default function Success({ user, handleSetToQuiz }: TSucces) {
-  // URL to share
-  const shareUrl = "http://your-app-homepage.com";
-
-  // Post title
-  const title = `Ho superato con successo il livello ${user.level} su Food(s2I)mpact. Vai sul sito ${shareUrl} se vuoi provare anche tu!`;
-
-  // Rendering the Success component
+// Define the UserInput component
+export default function UserInput({
+  handleInputChange,
+  handleSubmit,
+}: TuserInput) {
+  // The component returns a form with an input field and a submit button
   return (
-    <div className="flex flex-col gap-2 content-center justify-center w-full">
-      <p className="flex justify-center">Congratulazioni!</p>
-      <p className="flex justify-center">Livello superato</p>
-      <p className="flex justify-center">Accedi al livello {user.level}</p>
-      <section className="mt-6">
-        <div className="flex flex-col w-full">
-          <button onClick={handleSetToQuiz} className="text-[#38ded9]">
-            INZIA
-          </button>
-        </div>
-      </section>
-      <div className="flex justify-center flex-col w-full gap-6 mt-6">
-        <div className="flex justify-center">
-          <p>Condividi il tuo successo su Twitter</p>
-        </div>
-        <div className="flex justify-center text-[#38ded9]">
-          <TwitterShareButton
-            url={shareUrl}
-            title={title}
-            className="Demo__some-network__share-button"
-          >
-            <FiTwitter size={32} />
-          </TwitterShareButton>
-        </div>
+    <div className="flex flex-col gap-10 mt-12">
+      <div className="flex justify-center text-[#38ded9]">
+        {/* The input field calls handleInputChange when its value changes */}
+        <input
+          onChange={handleInputChange}
+          placeholder="Nome"
+          className="bg-[#454444]"
+          maxLength={10}
+        />
+      </div>
+      <div className="flex justify-center">
+        {/* The submit button calls handleSubmit when it's clicked */}
+        <button onClick={handleSubmit}>
+          <FaPlay color={"#454444"} />
+        </button>
       </div>
     </div>
   );
