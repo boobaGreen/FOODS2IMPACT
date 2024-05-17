@@ -5,7 +5,7 @@
     <h1 align="center">S2IMPACTTRIVIAREACTTSREFACTOR</h1>
 </p>
 <p align="center">
-    <em>HTTP error 401 for prompt `slogan`</em>
+    <em><code>► INSERT-TEXT-HERE</code></em>
 </p>
 <p align="center">
 	<img src="https://img.shields.io/github/license/boobaGreen/S2ImpactTriviaReactTSRefactor?style=flat&color=0080ff" alt="license">
@@ -28,36 +28,36 @@
 </p>
 <hr>
 
-## Quick Links
+## 🔗 Quick Links
 
-> - [ Overview](#-overview)
-> - [ Features](#-features)
-> - [ Repository Structure](#-repository-structure)
-> - [ Modules](#-modules)
-> - [ Getting Started](#-getting-started)
->   - [ Installation](#-installation)
->   - [ Running S2ImpactTriviaReactTSRefactor](#-running-S2ImpactTriviaReactTSRefactor)
->   - [ Tests](#-tests)
-> - [ Project Roadmap](#-project-roadmap)
-> - [ Contributing](#-contributing)
-> - [ License](#-license)
-> - [ Acknowledgments](#-acknowledgments)
-
----
-
-## Overview
-
-HTTP error 401 for prompt `overview`
+> - [📍 Overview](#-overview)
+> - [📦 Features](#-features)
+> - [📂 Repository Structure](#-repository-structure)
+> - [🧩 Modules](#-modules)
+> - [🚀 Getting Started](#-getting-started)
+>   - [⚙️ Installation](#️-installation)
+>   - [🤖 Running S2ImpactTriviaReactTSRefactor](#-running-S2ImpactTriviaReactTSRefactor)
+>   - [🧪 Tests](#-tests)
+> - [🛠 Project Roadmap](#-project-roadmap)
+> - [🤝 Contributing](#-contributing)
+> - [📄 License](#-license)
+> - [👏 Acknowledgments](#-acknowledgments)
 
 ---
 
-## Features
+## 📍 Overview
 
-HTTP error 401 for prompt `features`
+<code>► INSERT-TEXT-HERE</code>
 
 ---
 
-## Repository Structure
+## 📦 Features
+
+<code>► INSERT-TEXT-HERE</code>
+
+---
+
+## 📂 Repository Structure
 
 ```sh
 └── S2ImpactTriviaReactTSRefactor/
@@ -123,114 +123,114 @@ HTTP error 401 for prompt `features`
 
 ---
 
-## Modules
+## 🧩 Modules
 
 <details closed><summary>.</summary>
 
-| File                                                                                                             | Summary                                        |
-| ---------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
-| [tsconfig.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/tsconfig.json)           | HTTP error 401 for prompt `tsconfig.json`      |
-| [index.html](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/index.html)                 | HTTP error 401 for prompt `index.html`         |
-| [postcss.config.js](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/postcss.config.js)   | HTTP error 401 for prompt `postcss.config.js`  |
-| [encryptAnswers.js](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/encryptAnswers.js)   | HTTP error 401 for prompt `encryptAnswers.js`  |
-| [vite.config.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/vite.config.ts)         | HTTP error 401 for prompt `vite.config.ts`     |
-| [package.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/package.json)             | HTTP error 401 for prompt `package.json`       |
-| [tsconfig.node.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/tsconfig.node.json) | HTTP error 401 for prompt `tsconfig.node.json` |
-| [tailwind.config.js](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/tailwind.config.js) | HTTP error 401 for prompt `tailwind.config.js` |
-| [package-lock.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/package-lock.json)   | HTTP error 401 for prompt `package-lock.json`  |
+| File                                                                                                             | Summary                         |
+| ---                                                                                                              | ---                             |
+| [tsconfig.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/tsconfig.json)           | <code>► INSERT-TEXT-HERE</code> |
+| [index.html](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/index.html)                 | <code>► INSERT-TEXT-HERE</code> |
+| [postcss.config.js](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/postcss.config.js)   | <code>► INSERT-TEXT-HERE</code> |
+| [encryptAnswers.js](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/encryptAnswers.js)   | <code>► INSERT-TEXT-HERE</code> |
+| [vite.config.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/vite.config.ts)         | <code>► INSERT-TEXT-HERE</code> |
+| [package.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/package.json)             | <code>► INSERT-TEXT-HERE</code> |
+| [tsconfig.node.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/tsconfig.node.json) | <code>► INSERT-TEXT-HERE</code> |
+| [tailwind.config.js](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/tailwind.config.js) | <code>► INSERT-TEXT-HERE</code> |
+| [package-lock.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/package-lock.json)   | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
 
 <details closed><summary>src</summary>
 
-| File                                                                                                             | Summary                                          |
-| ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| [EndGame.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/EndGame.tsx)           | HTTP error 401 for prompt `src/EndGame.tsx`      |
-| [ScorePopup.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/ScorePopup.tsx)     | HTTP error 401 for prompt `src/ScorePopup.tsx`   |
-| [Header.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Header.tsx)             | HTTP error 401 for prompt `src/Header.tsx`       |
-| [Footer.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Footer.tsx)             | HTTP error 401 for prompt `src/Footer.tsx`       |
-| [Success.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Success.tsx)           | HTTP error 401 for prompt `src/Success.tsx`      |
-| [Logo.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Logo.tsx)                 | HTTP error 401 for prompt `src/Logo.tsx`         |
-| [Modal.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Modal.tsx)               | HTTP error 401 for prompt `src/Modal.tsx`        |
-| [main.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/main.tsx)                 | HTTP error 401 for prompt `src/main.tsx`         |
-| [vite-env.d.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/vite-env.d.ts)       | HTTP error 401 for prompt `src/vite-env.d.ts`    |
-| [UserInput.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/UserInput.tsx)       | HTTP error 401 for prompt `src/UserInput.tsx`    |
-| [Layout.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Layout.tsx)             | HTTP error 401 for prompt `src/Layout.tsx`       |
-| [NoSuccess.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/NoSuccess.tsx)       | HTTP error 401 for prompt `src/NoSuccess.tsx`    |
-| [App.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/App.tsx)                   | HTTP error 401 for prompt `src/App.tsx`          |
-| [Quiz.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Quiz.tsx)                 | HTTP error 401 for prompt `src/Quiz.tsx`         |
-| [index.css](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/index.css)               | HTTP error 401 for prompt `src/index.css`        |
-| [QuizQuestion.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/QuizQuestion.tsx) | HTTP error 401 for prompt `src/QuizQuestion.tsx` |
+| File                                                                                                             | Summary                         |
+| ---                                                                                                              | ---                             |
+| [EndGame.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/EndGame.tsx)           | <code>► INSERT-TEXT-HERE</code> |
+| [ScorePopup.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/ScorePopup.tsx)     | <code>► INSERT-TEXT-HERE</code> |
+| [Header.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Header.tsx)             | <code>► INSERT-TEXT-HERE</code> |
+| [Footer.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Footer.tsx)             | <code>► INSERT-TEXT-HERE</code> |
+| [Success.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Success.tsx)           | <code>► INSERT-TEXT-HERE</code> |
+| [Logo.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Logo.tsx)                 | <code>► INSERT-TEXT-HERE</code> |
+| [Modal.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Modal.tsx)               | <code>► INSERT-TEXT-HERE</code> |
+| [main.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/main.tsx)                 | <code>► INSERT-TEXT-HERE</code> |
+| [vite-env.d.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/vite-env.d.ts)       | <code>► INSERT-TEXT-HERE</code> |
+| [UserInput.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/UserInput.tsx)       | <code>► INSERT-TEXT-HERE</code> |
+| [Layout.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Layout.tsx)             | <code>► INSERT-TEXT-HERE</code> |
+| [NoSuccess.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/NoSuccess.tsx)       | <code>► INSERT-TEXT-HERE</code> |
+| [App.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/App.tsx)                   | <code>► INSERT-TEXT-HERE</code> |
+| [Quiz.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Quiz.tsx)                 | <code>► INSERT-TEXT-HERE</code> |
+| [index.css](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/index.css)               | <code>► INSERT-TEXT-HERE</code> |
+| [QuizQuestion.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/QuizQuestion.tsx) | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
 
 <details closed><summary>src.quiz.level1</summary>
 
-| File                                                                                                                                     | Summary                                                            |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [solutionEncrypted.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level1/solutionEncrypted.json) | HTTP error 401 for prompt `src/quiz/level1/solutionEncrypted.json` |
-| [quiz.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level1/quiz.ts)                               | HTTP error 401 for prompt `src/quiz/level1/quiz.ts`                |
-| [originalAnsewer.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level1/originalAnsewer.json)     | HTTP error 401 for prompt `src/quiz/level1/originalAnsewer.json`   |
+| File                                                                                                                                     | Summary                         |
+| ---                                                                                                                                      | ---                             |
+| [solutionEncrypted.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level1/solutionEncrypted.json) | <code>► INSERT-TEXT-HERE</code> |
+| [quiz.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level1/quiz.ts)                               | <code>► INSERT-TEXT-HERE</code> |
+| [originalAnsewer.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level1/originalAnsewer.json)     | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
 
 <details closed><summary>src.quiz.level3</summary>
 
-| File                                                                                                                                     | Summary                                                            |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [solutionEncrypted.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level3/solutionEncrypted.json) | HTTP error 401 for prompt `src/quiz/level3/solutionEncrypted.json` |
-| [quiz.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level3/quiz.ts)                               | HTTP error 401 for prompt `src/quiz/level3/quiz.ts`                |
-| [originalAnsewer.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level3/originalAnsewer.json)     | HTTP error 401 for prompt `src/quiz/level3/originalAnsewer.json`   |
+| File                                                                                                                                     | Summary                         |
+| ---                                                                                                                                      | ---                             |
+| [solutionEncrypted.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level3/solutionEncrypted.json) | <code>► INSERT-TEXT-HERE</code> |
+| [quiz.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level3/quiz.ts)                               | <code>► INSERT-TEXT-HERE</code> |
+| [originalAnsewer.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level3/originalAnsewer.json)     | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
 
 <details closed><summary>src.quiz.level2</summary>
 
-| File                                                                                                                                     | Summary                                                            |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [solutionEncrypted.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level2/solutionEncrypted.json) | HTTP error 401 for prompt `src/quiz/level2/solutionEncrypted.json` |
-| [quiz.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level2/quiz.ts)                               | HTTP error 401 for prompt `src/quiz/level2/quiz.ts`                |
-| [originalAnsewer.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level2/originalAnsewer.json)     | HTTP error 401 for prompt `src/quiz/level2/originalAnsewer.json`   |
+| File                                                                                                                                     | Summary                         |
+| ---                                                                                                                                      | ---                             |
+| [solutionEncrypted.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level2/solutionEncrypted.json) | <code>► INSERT-TEXT-HERE</code> |
+| [quiz.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level2/quiz.ts)                               | <code>► INSERT-TEXT-HERE</code> |
+| [originalAnsewer.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level2/originalAnsewer.json)     | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
 
 <details closed><summary>src.utils</summary>
 
-| File                                                                                                   | Summary                                        |
-| ------------------------------------------------------------------------------------------------------ | ---------------------------------------------- |
-| [utils.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/utils/utils.ts) | HTTP error 401 for prompt `src/utils/utils.ts` |
+| File                                                                                                   | Summary                         |
+| ---                                                                                                    | ---                             |
+| [utils.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/utils/utils.ts) | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
 
 <details closed><summary>src.lib.types</summary>
 
-| File                                                                                                         | Summary                                             |
-| ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------- |
-| [types.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/lib/types/types.tsx) | HTTP error 401 for prompt `src/lib/types/types.tsx` |
+| File                                                                                                         | Summary                         |
+| ---                                                                                                          | ---                             |
+| [types.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/lib/types/types.tsx) | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
 
 <details closed><summary>src.lib.hooks</summary>
 
-| File                                                                                                                                   | Summary                                                          |
-| -------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| [useGame.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/lib/hooks/useGame.ts)                         | HTTP error 401 for prompt `src/lib/hooks/useGame.ts`             |
-| [useQuiz.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/lib/hooks/useQuiz.ts)                         | HTTP error 401 for prompt `src/lib/hooks/useQuiz.ts`             |
-| [useDecryptedAnswers.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/lib/hooks/useDecryptedAnswers.ts) | HTTP error 401 for prompt `src/lib/hooks/useDecryptedAnswers.ts` |
+| File                                                                                                                                   | Summary                         |
+| ---                                                                                                                                    | ---                             |
+| [useGame.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/lib/hooks/useGame.ts)                         | <code>► INSERT-TEXT-HERE</code> |
+| [useQuiz.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/lib/hooks/useQuiz.ts)                         | <code>► INSERT-TEXT-HERE</code> |
+| [useDecryptedAnswers.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/lib/hooks/useDecryptedAnswers.ts) | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
-**_Requirements_**
+***Requirements***
 
 Ensure you have the following dependencies installed on your system:
 
-- **TypeScript**: `version x.y.z`
+* **TypeScript**: `version x.y.z`
 
-### Installation
+### ⚙️ Installation
 
 1. Clone the S2ImpactTriviaReactTSRefactor repository:
 
@@ -250,7 +250,7 @@ cd S2ImpactTriviaReactTSRefactor
 npm install
 ```
 
-### Running S2ImpactTriviaReactTSRefactor
+### 🤖 Running S2ImpactTriviaReactTSRefactor
 
 Use the following command to run S2ImpactTriviaReactTSRefactor:
 
@@ -258,7 +258,7 @@ Use the following command to run S2ImpactTriviaReactTSRefactor:
 npm run build && node dist/main.js
 ```
 
-### Tests
+### 🧪 Tests
 
 To execute tests, run:
 
@@ -268,15 +268,15 @@ npm test
 
 ---
 
-## Project Roadmap
+## 🛠 Project Roadmap
 
-- [x] `► INSERT-TASK-1`
+- [X] `► INSERT-TASK-1`
 - [ ] `► INSERT-TASK-2`
 - [ ] `► ...`
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Here are several ways you can contribute:
 
@@ -313,13 +313,13 @@ Once your PR is reviewed and approved, it will be merged into the main branch.
 
 ---
 
-## License
+## 📄 License
 
 This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
 
 ---
 
-## Acknowledgments
+## 👏 Acknowledgments
 
 - List any resources, contributors, inspiration, etc. here.
 
