@@ -48,13 +48,19 @@
 
 ## 📍 Overview
 
-<code>► INSERT-TEXT-HERE</code>
+<code>► </code> S2ImpactTriviaReactTSRefactor is an interactive trivia game built with React and TypeScript. The game challenges users with questions on various topics, tracks their scores, and advances them through levels based on their performance. The application uses local storage to save user progress and employs custom hooks for managing state and decrypting answers.
 
 ---
 
 ## 📦 Features
 
-<code>► INSERT-TEXT-HERE</code>
+<code>► </code> Interactive trivia game with multiple levels
+<code>► </code> User progress tracking with local storage
+<code>► </code> Custom hooks for state management and answer decryption
+<code>► </code> Responsive design with Tailwind CSS
+<code>► </code> Integration with Jest for testing React components
+<code>► </code> Ability to share scores on Twitter
+<code>► </code> Deployed on Vercel for live hosting
 
 ---
 
@@ -66,9 +72,9 @@ This enum represents the different states that the game can be in.
 
 ```typescript
 export enum GameStatus {
-  Quiz = "quiz", // The game is in the quiz state
-  EndGame = "endGame", // The game is in the end game state
-  Cover = "cover", // The game is in the cover state
+  Quiz = "quiz", // The game is in the quiz state , the quiz started
+  EndGame = "endGame", // The game is in the end game state , the quiz is just ended
+  Cover = "cover", // The game is in the cover initial state
 }
 ```
 
@@ -80,7 +86,7 @@ This type represents a user in the game.
 export type TUser = {
   name: string; // The name of the user
   singleGamePoints: number; // The points the user has scored in a single game
-  level: number; // The current level of the user in the game
+  level: number; // The current level of the user in the game (min level 1,max level 3)
 };
 ```
 
