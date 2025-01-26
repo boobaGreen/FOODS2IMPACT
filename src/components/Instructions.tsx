@@ -8,7 +8,7 @@ const Instructions: React.FC = () => {
         <p className="mb-2">Benvenuto su S2ImpactTrivia game!</p>
         <ul className="list-disc list-inside">
           <li className="mb-2">
-            Inserisci il tuo nome e clicca sull icona PLAY sopra la scritta
+            Inserisci il tuo nome e clicca sull'icona PLAY sopra la scritta
             START per iniziare il gioco.
           </li>
           <li className="mb-2">
