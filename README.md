@@ -284,9 +284,9 @@ cd FOODS2IMPACT
 npm install
 ```
 
-### 🤖 Running S2ImpactTriviaReactTSRefactor
+### 🤖 Running FOODS2IMPACT
 
-Use the following command to run in local S2ImpactTriviaReactTSRefactor:
+Use the following command to run in local FOODS2IMPACT
 
 ```sh
 npm run dev
@@ -330,9 +330,9 @@ npm run watch
 
 Contributions are welcome! Here are several ways you can contribute:
 
-- **[Submit Pull Requests](https://github.com/boobaGreen/https://github.com/boobaGreen/FOODS2IMPACT/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
-- **[Join the Discussions](https://github.com/boobaGreen/https://github.com/boobaGreen/FOODS2IMPACT/discussions)**: Share your insights, provide feedback, or ask questions.
-- **[Report Issues](https://github.com/boobaGreen/https://github.com/boobaGreen/FOODS2IMPACT/issues)**: Submit bugs found or log feature requests for S2impacttriviareacttsrefactor.
+- **[Submit Pull Requests](https://github.com/boobaGreen/FOODS2IMPACT/blob/main/CONTRIBUTING.md)**: Review open PRs, and submit your own PRs.
+- **[Join the Discussions](https://github.com/boobaGreen/FOODS2IMPACT/discussions)**: Share your insights, provide feedback, or ask questions.
+- **[Report Issues](https://github.com/boobaGreen/FOODS2IMPACT/issues)**: Submit bugs found or log feature requests for S2impacttriviareacttsrefactor.
 
 ---
 
