@@ -176,7 +176,7 @@
 
 <details closed><summary>src.quiz.level3</summary>
 
-| File                                                                                                                                     | Summary                         |
+| sFile                                                                                                                                    | Summary                         |
 | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
 | [solutionEncrypted.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level3/solutionEncrypted.json) | <code>► INSERT-TEXT-HERE</code> |
 | [quiz.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level3/quiz.ts)                               | <code>► INSERT-TEXT-HERE</code> |
@@ -313,6 +313,10 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 - List any resources, contributors, inspiration, etc. here.
 
-[**meta.process.env manage for jest**](#https://stackoverflow.com/questions/70440505/ts1343-the-import-meta-meta-property-is-only-allowed-when-the-module-opti)
+[**Manage "meta.process.env" for Jest**](https://stackoverflow.com/questions/70440505/ts1343-the-import-meta-meta-property-is-only-allowed-when-the-module-opti)
+
+[**Jest Tyepecript and React example**](https://codermo.medium.com/setting-up-a-react-app-with-vite-typescript-jest-and-react-testing-library-e001ddce4f53)
+
+[**Animation in Tailwind **](https://v2.tailwindcss.com/docs/animation)
 
 ---
