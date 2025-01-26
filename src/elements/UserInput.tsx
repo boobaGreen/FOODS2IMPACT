@@ -34,13 +34,13 @@ export default function UserInput({
         <button
           onClick={handleSubmit}
           data-testid="play-button"
-          className="animate-bounce flex items-center justify-center"
+          className="animate-bounce flex items-center justify-center flex-col"
         >
           <FaPlay className="text-customGrey" />
+          <div className="flex items-center justify-center mt-2 text-customGrey font-bold">
+            <p className="font-press-start">START</p>
+          </div>
         </button>
-        <div className="flex items-center justify-center mt-2 text-customGrey font-bold">
-          <p className="font-press-start">START</p>
-        </div>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ type TSucces = {
 // Success component
 export default function Success({ user, handleSetToQuiz }: TSucces) {
   // URL to share
-  const shareUrl = "http://your-app-homepage.com";
+  const shareUrl = "https://foods-2-impact.vercel.app/";
 
   // Post title
   const title = `Ho superato con successo il livello ${user.level} su Food(s2I)mpact. Vai sul sito ${shareUrl} se vuoi provare anche tu!`;
@@ -22,7 +22,7 @@ export default function Success({ user, handleSetToQuiz }: TSucces) {
     <div className="flex flex-col gap-2 content-center justify-center w-full">
       <p className="flex justify-center">Congratulazioni!</p>
       <p className="flex justify-center">Livello superato</p>
-      <p className="flex justify-center">Accedi al livello {user.level}</p>
+      <p className="flex justify-center">Accedi al livello {user.level + 1}</p>
       <section className="mt-6">
         <div className="flex flex-col w-full">
           <button onClick={handleSetToQuiz} className="text-customTurquese">
