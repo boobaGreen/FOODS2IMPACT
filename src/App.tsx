@@ -43,8 +43,11 @@ const App = () => {
   // Handler for confirming user removal
   const confirmRemoveUser = () => {
     removeUser();
+    // setUser({ name: "", singleGamePoints: 0, level: 0 });
+    setInputValue(""); // Clear the input field
     setGameStatus(GameStatus.Cover);
     setShowConfirmationModal(false);
+    // qui mettiamo un reload della pagina
   };
 
   // Handler for cancelling user removal
@@ -64,6 +67,7 @@ const App = () => {
         <UserInput
           handleSubmit={handleSubmit}
           handleInputChange={handleInputChange}
+          inputValue={""}
         />
       ) : (
         <>

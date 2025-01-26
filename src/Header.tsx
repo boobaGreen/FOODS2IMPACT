@@ -22,7 +22,7 @@ function Header({ user, handleRemoveUser }: THeader) {
       <header className="flex justify-between">
         <button
           onClick={handleHome}
-          className="flex justify-center w-[8rem] ml-[-2rem] mt-[-1rem]"
+          className="flex justify-center w-[8rem] ml-[-2rem] mt-[-1rem] animate-wiggle"
         >
           <Logo />
         </button>

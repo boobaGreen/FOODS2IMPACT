@@ -286,8 +286,10 @@ npm run watch
 - [x] Manage the possibility to share on Twitter
 - [x] Enhance the UI with Tailwind CSS
 - [x] Add a testing section with Jest for React and include a couple of sample tests
+- [x] Deploy the application on Vercel for live hosting
 - [x] Refine and review the README file
 - [x] Prepare the presentation
+- [ ] Add tests and continue experimenting with Jest on React for both layout and calculations, including mockups
 
 ---
 
@@ -303,7 +305,7 @@ Contributions are welcome! Here are several ways you can contribute:
 
 ## 📄 License
 
-This project is protected under the [SELECT-A-LICENSE](https://choosealicense.com/licenses) License. For more details, refer to the [LICENSE](https://choosealicense.com/licenses/) file.
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT). For more details, refer to the [LICENSE](https://opensource.org/licenses/MIT) file.
 
 ---
 
@@ -311,6 +313,6 @@ This project is protected under the [SELECT-A-LICENSE](https://choosealicense.co
 
 - List any resources, contributors, inspiration, etc. here.
 
-[**Return**](#-quick-links)
+[**meta.process.env manage for jest**](#https://stackoverflow.com/questions/70440505/ts1343-the-import-meta-meta-property-is-only-allowed-when-the-module-opti)
 
 ---

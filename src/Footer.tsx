@@ -46,7 +46,7 @@ function Footer(): JSX.Element {
                 href={link.url}
                 target="__blank"
                 key={link.id}
-                className="p-2 duration-300 rounded-lg shadow-sm cursor-pointer "
+                className="p-2 duration-300 rounded-lg shadow-sm cursor-pointer hover:animate-spin-slow"
               >
                 <i className="text-lg md:xl">{link.icon}</i>
               </a>

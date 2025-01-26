@@ -8,12 +8,14 @@ jest.mock("../lib/hooks/useDecryptedAnswers");
 describe("App component", () => {
   it("renders UserInput when user name is empty", () => {
     render(<App />);
-    expect(screen.getByPlaceholderText("Nome")).toBeInTheDocument();
+    expect(
+      screen.getByPlaceholderText("Inserisci un Nome")
+    ).toBeInTheDocument();
   });
 
   it("renders Quiz component when gameStatus is Quiz", async () => {
     render(<App />);
-    fireEvent.change(screen.getByPlaceholderText("Nome"), {
+    fireEvent.change(screen.getByPlaceholderText("Inserisci un Nome"), {
       target: { value: "Test User" },
     });
     fireEvent.click(screen.getByTestId("play-button")); // Use data-testid to target the button
