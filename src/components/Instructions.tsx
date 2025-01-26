@@ -3,7 +3,7 @@ import React from "react";
 const Instructions: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <div className="instructions mt-10 p-4 bg-gray-100 rounded bg-opacity-50 mb-10 max-w-xl">
+      <div className="instructions mt-10 p-4 bg-gray-100 rounded mb-10 max-w-xl bg-white opacity-50">
         <h2 className="text-xl font-bold mb-2">Istruzioni</h2>
         <p className="mb-2">Benvenuto su S2ImpactTrivia game!</p>
         <ul className="list-disc list-inside">

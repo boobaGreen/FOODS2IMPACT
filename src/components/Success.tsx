@@ -25,7 +25,7 @@ export default function Success({ user, handleSetToQuiz }: TSucces) {
       <p className="flex justify-center">Accedi al livello {user.level}</p>
       <section className="mt-6">
         <div className="flex flex-col w-full">
-          <button onClick={handleSetToQuiz} className="text-[#38ded9]">
+          <button onClick={handleSetToQuiz} className="text-customTurquese">
             INZIA
           </button>
         </div>
@@ -34,7 +34,7 @@ export default function Success({ user, handleSetToQuiz }: TSucces) {
         <div className="flex justify-center">
           <p>Condividi il tuo successo su Twitter</p>
         </div>
-        <div className="flex justify-center text-[#38ded9]">
+        <div className="flex justify-center text-customTurquese]">
           <TwitterShareButton
             url={shareUrl}
             title={title}

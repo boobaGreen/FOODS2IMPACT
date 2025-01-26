@@ -27,7 +27,7 @@ function Header({ user, handleRemoveUser }: THeader) {
           <Logo />
         </button>
         {user?.name ? (
-          <div className="flex flex-col text-sm text-[#454444] w-80 text-pretty">
+          <div className="flex flex-col text-sm text-customGrey  w-80 text-pretty">
             <div className="flex justify-end gap-6">
               <div className="flex justify-center gap-2 ">
                 <p className="font-press-start">Points</p>
@@ -42,16 +42,16 @@ function Header({ user, handleRemoveUser }: THeader) {
               <div className="font-press-start">{user?.name.toUpperCase()}</div>
               <div>
                 <button onClick={handleRemoveUser} className="">
-                  <FaTrash color="#35c4c4" />
+                  <FaTrash className="text-customTurquese" />
                 </button>
               </div>
             </div>
           </div>
         ) : null}
       </header>
-      <h1 className="flex justify-center text-xl md:2xl  text-[#35c4c4] mt-10 font-press-start">
+      <h1 className="flex justify-center text-xl md:2xl  text-customTurquese mt-10 font-press-start">
         FOOD
-        <span className="text-[#ffff]">(s2i)</span>
+        <span className="text-white">(s2i)</span>
         MPACT
       </h1>
     </div>

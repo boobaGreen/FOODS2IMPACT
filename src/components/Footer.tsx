@@ -12,17 +12,17 @@ interface SocialLink {
 const socialLinks: SocialLink[] = [
   {
     id: 1,
-    icon: <FiGithub color="#454444" />,
+    icon: <FiGithub className="text-customGrey" />,
     url: "https://github.com/boobaGreen",
   },
   {
     id: 2,
-    icon: <FiTwitter color="#454444" />,
+    icon: <FiTwitter className="text-customGrey" />,
     url: "https://twitter.com/claudiodal8444",
   },
   {
     id: 3,
-    icon: <FiLinkedin color="#454444" />,
+    icon: <FiLinkedin className="text-customGrey" />,
     url: "https://www.linkedin.com/in/claudio-dall-ara-730aa0302/",
   },
 ];
@@ -36,7 +36,7 @@ function Footer(): JSX.Element {
   return (
     <div className="w-full font-press-start ">
       <div className="flex flex-col items-center justify-center w-full ">
-        <p className="mt-1 text-xs md:text-sm text-[#454444] text-center">
+        <p className="mt-1 text-xs md:text-sm text-customGrey text-center">
           Dall'Ara Claudio Copyright © {currentYear}
         </p>
         <div className="flex justify-center w-auto">

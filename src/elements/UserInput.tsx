@@ -19,13 +19,13 @@ export default function UserInput({
   // The component returns a form with an input field and a submit button
   return (
     <div className="flex flex-col gap-10 mt-12 items-center">
-      <div className="flex justify-center text-[#38ded9]">
+      <div className="flex justify-center text-customTurquese">
         {/* The input field calls handleInputChange when its value changes */}
         <input
           onChange={handleInputChange}
           value={inputValue} // Bind the input value
           placeholder="Inserisci un Nome"
-          className="bg-[#454444] text-white p-2 rounded"
+          className="bg-customGrey text-white p-2 rounded"
           maxLength={10}
         />
       </div>
@@ -36,9 +36,9 @@ export default function UserInput({
           data-testid="play-button"
           className="animate-bounce flex items-center justify-center"
         >
-          <FaPlay color={"#454444"} />
+          <FaPlay className="text-customGrey" />
         </button>
-        <div className="flex items-center justify-center mt-2">
+        <div className="flex items-center justify-center mt-2 text-customGrey font-bold">
           <p>START</p>
         </div>
       </div>

@@ -37,14 +37,14 @@ const QuizQuestion: React.FC<TQuizQuestionProps> = ({
   // Rendering the QuizQuestion component
   return (
     <div className="flex flex-col h-full mt-2">
-      <h3 className="text-xs text-[#202020]  text-pretty mb-2 font-press-start ">
+      <h3 className="text-xs text-customDark text-pretty mb-2 font-press-start ">
         {question}
       </h3>
       <div className="relative pt-1">
-        <div className="overflow-hidden h-4 mb-6 text-xs flex rounded bg-[#3e6c6a]">
+        <div className="overflow-hidden h-4 mb-6 text-xs flex rounded bg-customTurqueseMedium">
           <div
             style={{ width: `${(questionNumber / totalQuestions) * 100}%` }}
-            className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-[#38ded9]"
+            className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-customTurquese"
           ></div>
         </div>
       </div>
@@ -53,8 +53,8 @@ const QuizQuestion: React.FC<TQuizQuestionProps> = ({
           key={index}
           className={`text-pretty mb-2 p-1 text-xs md:text-sm ${
             selectedAnswer === answer
-              ? "bg-[#78e6e2] text-[#454444]] border-[#454444] border-solid border-2 font-press-start"
-              : "bg-[#31807d] text-[white] border-[#454444] border-solid border-2 font-press-start"
+              ? "bg-customTurquese text-customGrey border-customGrey border-solid border-2 font-press-start"
+              : "bg-customTurqueseMedium text-[white] border-customGrey border-solid border-2 font-press-start"
           }`}
           onClick={() => handleAnswerClick(answer)}
         >
@@ -63,7 +63,7 @@ const QuizQuestion: React.FC<TQuizQuestionProps> = ({
       ))}
       {selectedAnswer && (
         <button
-          className={`mt-2 mb-4 p-2 text-[#454444] border-[#454444] border-solid border-2 font-press-start ${
+          className={`mt-2 mb-4 p-2 text-customGrey border-customGrey border-solid border-2 font-press-start ${
             !selectedAnswer ? "bg-[#ffff]" : "bg-[#78e6e2]"
           }`}
           onClick={handleConfirmClick}
