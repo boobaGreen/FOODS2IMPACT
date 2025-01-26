@@ -303,6 +303,8 @@ cd FOODS2IMPACT
 npm install
 ```
 
+4. **Important**: Create a `.env` file in the root of the project with the constant `VITE_KEY_DECRYPTION="forzacesenalaserieAnoncibastapiuvogliamlachampionsleaguewsb81"` which should contain your own secret key for decryption. Since this is a study project, I have left the key visible in a `.envfake` file. You can simply rename it to `.env` and use my decryption password. I have left it visible only because this is a study project.
+
 ### 🤖 Running FOODS2IMPACT
 
 Use the following command to run in local FOODS2IMPACT
