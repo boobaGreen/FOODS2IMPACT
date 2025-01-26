@@ -24,36 +24,3 @@ describe("App component", () => {
     });
   });
 });
-// it("renders EndGame component when gameStatus is EndGame", () => {
-//   render(<App />);
-//   fireEvent.change(screen.getByPlaceholderText("Enter your name"), {
-//     target: { value: "Test User" },
-//   });
-//   fireEvent.click(screen.getByText("Submit"));
-//   fireEvent.click(screen.getByText("End Game"));
-//   expect(screen.getByText("EndGame Component")).toBeInTheDocument();
-// });
-
-// it("shows confirmation modal when handleRemoveUser is called", () => {
-//   render(<App />);
-//   fireEvent.change(screen.getByPlaceholderText("Enter your name"), {
-//     target: { value: "Test User" },
-//   });
-//   fireEvent.click(screen.getByText("Submit"));
-//   fireEvent.click(screen.getByText("Remove User"));
-//   expect(
-//     screen.getByText("Are you sure you want to remove the user?")
-//   ).toBeInTheDocument();
-// });
-
-// it("removes user and shows cover screen when confirmRemoveUser is called", () => {
-//   render(<App />);
-//   fireEvent.change(screen.getByPlaceholderText("Enter your name"), {
-//     target: { value: "Test User" },
-//   });
-//   fireEvent.click(screen.getByText("Submit"));
-//   fireEvent.click(screen.getByText("Remove User"));
-//   fireEvent.click(screen.getByText("Confirm"));
-//   expect(screen.getByPlaceholderText("Enter your name")).toBeInTheDocument();
-// });
-// });

@@ -23,7 +23,10 @@ const EndGame: FC<EndQuizProps> = ({ user, setGameStatus, setUser }) => {
 
   // Rendering the Success or NoSuccess component based on the user's single game points
   return (
-    <div className="text-white flex justify-center font-press-start text-base">
+    <div
+      className="text-white flex justify-center font-press-start text-base"
+      data-testid="endgame-component"
+    >
       {user.singleGamePoints >= 6 ? (
         <Success user={user} handleSetToQuiz={handleSetToQuiz} />
       ) : (
