@@ -82,23 +82,25 @@ export const Quiz: React.FC<TQuizProps> = ({
 
   // Rendering the Quiz component
   return (
-    <main className="flex flex-col h-full">
-      {question && answers && (
-        <QuizQuestion
-          question={question}
-          answers={answers}
-          questionNumber={currentQuestion + 1}
-          totalQuestions={quiz.length}
-          onConfirm={handleConfirm}
-        />
-      )}
-      {currentQuestion > 0 ? (
-        <ScorePopup
-          key={scoreKey}
-          forPopUp={forPopUp}
-          color={forPopUp ? "white" : "#454444"}
-        />
-      ) : null}
+    <main className="flex flex-col h-full  items-center mt-10">
+      <div className="max-w-2xl">
+        {question && answers && (
+          <QuizQuestion
+            question={question}
+            answers={answers}
+            questionNumber={currentQuestion + 1}
+            totalQuestions={quiz.length}
+            onConfirm={handleConfirm}
+          />
+        )}
+        {currentQuestion > 0 ? (
+          <ScorePopup
+            key={scoreKey}
+            forPopUp={forPopUp}
+            color={forPopUp ? "white" : "#454444"}
+          />
+        ) : null}
+      </div>
     </main>
   );
 };
