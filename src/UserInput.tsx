@@ -36,7 +36,7 @@ export default function UserInput({
       </div>
       <div className="flex justify-center">
         {/* The submit button calls handleSubmit when it's clicked */}
-        <button onClick={handleSubmit}>
+        <button onClick={handleSubmit} data-testid="play-button">
           <FaPlay color={"#454444"} />
         </button>
       </div>

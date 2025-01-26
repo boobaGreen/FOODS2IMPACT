@@ -13,7 +13,7 @@ const useDecryptedAnswers = (level: number): string[] => {
     import(`../../quiz/level${level}/solutionEncrypted.json`)
       .then((module) => {
         // Get the decryption key from environment variables
-        const key = import.meta.env.VITE_KEY_DECRYPTION as string;
+        const key = process.env.VITE_KEY_DECRYPTION as string;
 
         // Access the encrypted data
         const encryptedData = module.default.encryptedAnswers;
@@ -23,7 +23,7 @@ const useDecryptedAnswers = (level: number): string[] => {
         const decryptedData = bytes.toString(CryptoJS.enc.Utf8);
 
         // Log the decrypted data
-        console.log(`Decrypted data for level ${level}:`, decryptedData);
+        // console.log(`Decrypted data for level ${level}:`, decryptedData);
 
         let decryptedAnswers: string[] = [];
         if (decryptedData) {

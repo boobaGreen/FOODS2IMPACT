@@ -14,14 +14,11 @@ import Modal from "./Modal";
 const App = () => {
   // State variables for game status, user data, input value and modal visibility
   const [gameStatus, setGameStatus] = useState(GameStatus.Quiz);
-  const [user, setUser, removeUser] = useLocalStorage<TUser>(
-    "user",
-    {
-      name: "",
-      singleGamePoints: 0,
-      level: 0,
-    } || null
-  );
+  const [user, setUser, removeUser] = useLocalStorage<TUser>("user", {
+    name: "",
+    singleGamePoints: 0,
+    level: 0,
+  });
   const [inputValue, setInputValue] = useState("");
   const [showConfirmationModal, setShowConfirmationModal] = useState(false);
 

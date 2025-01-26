@@ -2,10 +2,10 @@
   <img src="https://cdn-icons-png.flaticon.com/512/6295/6295417.png" width="100" />
 </p>
 <p align="center">
-    <h1 align="center">S2IMPACTTRIVIAREACTTSREFACTOR</h1>
+    <h1 align="center">FOODS2IMPACT-</h1>
 </p>
 <p align="center">
-    <em><code>► INSERT-TEXT-HERE</code></em>
+    <em><code>REACT ACND TYPESCRIPT SIMPLE APP</code></em>
 </p>
 <p align="center">
 	<img src="https://img.shields.io/github/license/boobaGreen/S2ImpactTriviaReactTSRefactor?style=flat&color=0080ff" alt="license">
@@ -128,7 +128,7 @@
 <details closed><summary>.</summary>
 
 | File                                                                                                             | Summary                         |
-| ---                                                                                                              | ---                             |
+| ---------------------------------------------------------------------------------------------------------------- | ------------------------------- |
 | [tsconfig.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/tsconfig.json)           | <code>► INSERT-TEXT-HERE</code> |
 | [index.html](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/index.html)                 | <code>► INSERT-TEXT-HERE</code> |
 | [postcss.config.js](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/postcss.config.js)   | <code>► INSERT-TEXT-HERE</code> |
@@ -144,7 +144,7 @@
 <details closed><summary>src</summary>
 
 | File                                                                                                             | Summary                         |
-| ---                                                                                                              | ---                             |
+| ---------------------------------------------------------------------------------------------------------------- | ------------------------------- |
 | [EndGame.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/EndGame.tsx)           | <code>► INSERT-TEXT-HERE</code> |
 | [ScorePopup.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/ScorePopup.tsx)     | <code>► INSERT-TEXT-HERE</code> |
 | [Header.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Header.tsx)             | <code>► INSERT-TEXT-HERE</code> |
@@ -167,7 +167,7 @@
 <details closed><summary>src.quiz.level1</summary>
 
 | File                                                                                                                                     | Summary                         |
-| ---                                                                                                                                      | ---                             |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
 | [solutionEncrypted.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level1/solutionEncrypted.json) | <code>► INSERT-TEXT-HERE</code> |
 | [quiz.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level1/quiz.ts)                               | <code>► INSERT-TEXT-HERE</code> |
 | [originalAnsewer.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level1/originalAnsewer.json)     | <code>► INSERT-TEXT-HERE</code> |
@@ -177,7 +177,7 @@
 <details closed><summary>src.quiz.level3</summary>
 
 | File                                                                                                                                     | Summary                         |
-| ---                                                                                                                                      | ---                             |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
 | [solutionEncrypted.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level3/solutionEncrypted.json) | <code>► INSERT-TEXT-HERE</code> |
 | [quiz.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level3/quiz.ts)                               | <code>► INSERT-TEXT-HERE</code> |
 | [originalAnsewer.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level3/originalAnsewer.json)     | <code>► INSERT-TEXT-HERE</code> |
@@ -187,7 +187,7 @@
 <details closed><summary>src.quiz.level2</summary>
 
 | File                                                                                                                                     | Summary                         |
-| ---                                                                                                                                      | ---                             |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
 | [solutionEncrypted.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level2/solutionEncrypted.json) | <code>► INSERT-TEXT-HERE</code> |
 | [quiz.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level2/quiz.ts)                               | <code>► INSERT-TEXT-HERE</code> |
 | [originalAnsewer.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level2/originalAnsewer.json)     | <code>► INSERT-TEXT-HERE</code> |
@@ -197,7 +197,7 @@
 <details closed><summary>src.utils</summary>
 
 | File                                                                                                   | Summary                         |
-| ---                                                                                                    | ---                             |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------- |
 | [utils.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/utils/utils.ts) | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
@@ -205,7 +205,7 @@
 <details closed><summary>src.lib.types</summary>
 
 | File                                                                                                         | Summary                         |
-| ---                                                                                                          | ---                             |
+| ------------------------------------------------------------------------------------------------------------ | ------------------------------- |
 | [types.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/lib/types/types.tsx) | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
@@ -213,7 +213,7 @@
 <details closed><summary>src.lib.hooks</summary>
 
 | File                                                                                                                                   | Summary                         |
-| ---                                                                                                                                    | ---                             |
+| -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
 | [useGame.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/lib/hooks/useGame.ts)                         | <code>► INSERT-TEXT-HERE</code> |
 | [useQuiz.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/lib/hooks/useQuiz.ts)                         | <code>► INSERT-TEXT-HERE</code> |
 | [useDecryptedAnswers.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/lib/hooks/useDecryptedAnswers.ts) | <code>► INSERT-TEXT-HERE</code> |
@@ -224,11 +224,12 @@
 
 ## 🚀 Getting Started
 
-***Requirements***
+**_Requirements_**
 
 Ensure you have the following dependencies installed on your system:
 
-* **TypeScript**: `version x.y.z`
+- Node.js: version 20.x.x
+- npm: version 8.x.x
 
 ### ⚙️ Installation
 
@@ -252,10 +253,10 @@ npm install
 
 ### 🤖 Running S2ImpactTriviaReactTSRefactor
 
-Use the following command to run S2ImpactTriviaReactTSRefactor:
+Use the following command to run in local S2ImpactTriviaReactTSRefactor:
 
 ```sh
-npm run build && node dist/main.js
+npm run dev
 ```
 
 ### 🧪 Tests
@@ -270,7 +271,7 @@ npm test
 
 ## 🛠 Project Roadmap
 
-- [X] `► INSERT-TASK-1`
+- [x] `► INSERT-TASK-1`
 - [ ] `► INSERT-TASK-2`
 - [ ] `► ...`
 
