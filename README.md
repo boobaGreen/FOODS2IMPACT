@@ -34,7 +34,6 @@
 >   - [📦 Key Features](#-key-features)
 > - [📚 Types](#-types)
 > - [📂 Repository Structure](#-repository-structure)
-> - [🧩 Modules](#-modules)
 > - [🚀 Getting Started](#-getting-started)
 >   - [⚙️ Installation](#️-installation)
 >   - [🤖 Running S2ImpactTriviaReactTSRefactor](#-running-S2ImpactTriviaReactTSRefactor)
@@ -85,6 +84,125 @@ export type TUser = {
   name: string; // The name of the user
   singleGamePoints: number; // The points the user has scored in a single game
   level: number; // The current level of the user in the game (min level 1,max level 3)
+};
+```
+
+### SocialLink Interface
+
+This interface represents a social media link.
+
+```typescript
+export interface SocialLink {
+  id: number; // The unique identifier for the social link
+  icon: JSX.Element; // The icon representing the social media platform
+  url: string; // The URL of the social media profile or page
+}
+```
+
+### THeader Type
+
+This type represents the props for the Header component.
+
+```typescript
+export type THeader = {
+  user: TUser; // The user object
+  children: ReactNode; // The children elements
+  handleRemoveUser: () => void; // Function to handle user removal
+};
+```
+
+### TLayout Type
+
+This type represents the props for the Layout component.
+
+```typescript
+export type TLayout = {
+  user: TUser; // The user object
+  children: ReactNode; // The children elements
+  handleRemoveUser: () => void; // Function to handle user removal
+};
+```
+
+### TModal Type
+
+This type represents the props for the Modal component.
+
+```typescript
+export type TModal = {
+  confirmRemoveUser: () => void; // Function to confirm user removal
+  cancelRemoveUser: () => void; // Function to cancel user removal
+};
+```
+
+### EndQuizProps Type
+
+This type represents the props for the EndGame component.
+
+```typescript
+export type EndQuizProps = {
+  user: TUser; // The user object
+  setGameStatus: React.Dispatch<React.SetStateAction<GameStatus>>; // Function to set the game status
+  setUser: React.Dispatch<React.SetStateAction<TUser>>; // Function to set the user
+};
+```
+
+### TSucces Type
+
+This type represents the props for the Success component.
+
+```typescript
+export type TSucces = {
+  user: TUser; // The user object
+  handleSetToQuiz: () => void; // Function to set the game status to quiz
+};
+```
+
+### TNoSucces Type
+
+This type represents the props for the NoSuccess component.
+
+```typescript
+export type TNoSucces = {
+  handleSetToQuiz: () => void; // Function to set the game status to quiz
+};
+```
+
+### TQuizQuestionProps Type
+
+This type represents the props for the QuizQuestion component.
+
+```typescript
+export type TQuizQuestionProps = {
+  question: string; // The quiz question
+  answers: string[]; // The possible answers for the question
+  questionNumber: number; // The current question number
+  totalQuestions: number; // The total number of questions
+  onConfirm: (selectedAnswer: string) => void; // Function to handle answer confirmation
+};
+```
+
+### ScorePopupProps Type
+
+This type represents the props for the ScorePopup component.
+
+```typescript
+export type ScorePopupProps = {
+  forPopUp: boolean; // Indicates whether the popup is for a correct answer
+  color: string; // The color of the popup
+};
+```
+
+### TuserInput Type
+
+This type represents the props for the UserInput component.
+
+```typescript
+export type TuserInput = {
+  handleInputChange: (event: {
+    target: { value: SetStateAction<string> };
+  }) => void; // Function to handle input change
+  handleSubmit: () => void; // Function to handle form submission
+  inputValue: string; // The input value
 };
 ```
 
@@ -153,105 +271,6 @@ export type TUser = {
     ├── tsconfig.node.json
     └── vite.config.ts
 ```
-
----
-
-## 🧩 Modules
-
-<details closed><summary>.</summary>
-
-| File                                                                                            | Summary                         |
-| ----------------------------------------------------------------------------------------------- | ------------------------------- |
-| [tsconfig.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/tsconfig.json)           | <code>► INSERT-TEXT-HERE</code> |
-| [index.html](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/index.html)                 | <code>► INSERT-TEXT-HERE</code> |
-| [postcss.config.js](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/postcss.config.js)   | <code>► INSERT-TEXT-HERE</code> |
-| [encryptAnswers.js](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/encryptAnswers.js)   | <code>► INSERT-TEXT-HERE</code> |
-| [vite.config.ts](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/vite.config.ts)         | <code>► INSERT-TEXT-HERE</code> |
-| [package.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/package.json)             | <code>► INSERT-TEXT-HERE</code> |
-| [tsconfig.node.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/tsconfig.node.json) | <code>► INSERT-TEXT-HERE</code> |
-| [tailwind.config.js](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/tailwind.config.js) | <code>► INSERT-TEXT-HERE</code> |
-| [package-lock.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/package-lock.json)   | <code>► INSERT-TEXT-HERE</code> |
-
-</details>
-
-<details closed><summary>src</summary>
-
-| File                                                                                            | Summary                         |
-| ----------------------------------------------------------------------------------------------- | ------------------------------- |
-| [EndGame.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/EndGame.tsx)           | <code>► INSERT-TEXT-HERE</code> |
-| [ScorePopup.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/ScorePopup.tsx)     | <code>► INSERT-TEXT-HERE</code> |
-| [Header.tsx](https://github.com/boobaGreen/FOODS2IMPACTblob/master/src/Header.tsx)              | <code>► INSERT-TEXT-HERE</code> |
-| [Footer.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/Footer.tsx)             | <code>► INSERT-TEXT-HERE</code> |
-| [Success.tsx](https://github.com/boobaGreen/FOODS2IMPACTblob/master/src/Success.tsx)            | <code>► INSERT-TEXT-HERE</code> |
-| [Logo.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/Logo.tsx)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Modal.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/Modal.tsx)               | <code>► INSERT-TEXT-HERE</code> |
-| [main.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/main.tsx)                 | <code>► INSERT-TEXT-HERE</code> |
-| [vite-env.d.ts](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/vite-env.d.ts)       | <code>► INSERT-TEXT-HERE</code> |
-| [UserInput.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/UserInput.tsx)       | <code>► INSERT-TEXT-HERE</code> |
-| [Layout.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/Layout.tsx)             | <code>► INSERT-TEXT-HERE</code> |
-| [NoSuccess.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/NoSuccess.tsx)       | <code>► INSERT-TEXT-HERE</code> |
-| [App.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/App.tsx)                   | <code>► INSERT-TEXT-HERE</code> |
-| [Quiz.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/Quiz.tsx)                 | <code>► INSERT-TEXT-HERE</code> |
-| [index.css](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/index.css)               | <code>► INSERT-TEXT-HERE</code> |
-| [QuizQuestion.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/QuizQuestion.tsx) | <code>► INSERT-TEXT-HERE</code> |
-
-</details>
-
-<details closed><summary>src.quiz.level1</summary>
-
-| File                                                                                                                    | Summary                         |
-| ----------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| [solutionEncrypted.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/quiz/level1/solutionEncrypted.json) | <code>► INSERT-TEXT-HERE</code> |
-| [quiz.ts](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/quiz/level1/quiz.ts)                               | <code>► INSERT-TEXT-HERE</code> |
-| [originalAnsewer.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/quiz/level1/originalAnsewer.json)     | <code>► INSERT-TEXT-HERE</code> |
-
-</details>
-
-<details closed><summary>src.quiz.level3</summary>
-
-| sFile                                                                                                                   | Summary                         |
-| ----------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| [solutionEncrypted.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/quiz/level3/solutionEncrypted.json) | <code>► INSERT-TEXT-HERE</code> |
-| [quiz.ts](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/quiz/level3/quiz.ts)                               | <code>► INSERT-TEXT-HERE</code> |
-| [originalAnsewer.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/quiz/level3/originalAnsewer.json)     | <code>► INSERT-TEXT-HERE</code> |
-
-</details>
-
-<details closed><summary>src.quiz.level2</summary>
-
-| File                                                                                                                    | Summary                         |
-| ----------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| [solutionEncrypted.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/quiz/level2/solutionEncrypted.json) | <code>► INSERT-TEXT-HERE</code> |
-| [quiz.ts](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/quiz/level2/quiz.ts)                               | <code>► INSERT-TEXT-HERE</code> |
-| [originalAnsewer.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/quiz/level2/originalAnsewer.json)     | <code>► INSERT-TEXT-HERE</code> |
-
-</details>
-
-<details closed><summary>src.utils</summary>
-
-| File                                                                                  | Summary                         |
-| ------------------------------------------------------------------------------------- | ------------------------------- |
-| [utils.ts](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/utils/utils.ts) | <code>► INSERT-TEXT-HERE</code> |
-
-</details>
-
-<details closed><summary>src.lib.types</summary>
-
-| File                                                                                        | Summary                         |
-| ------------------------------------------------------------------------------------------- | ------------------------------- |
-| [types.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/lib/types/types.tsx) | <code>► INSERT-TEXT-HERE</code> |
-
-</details>
-
-<details closed><summary>src.lib.hooks</summary>
-
-| File                                                                                                                  | Summary                         |
-| --------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| [useGame.ts](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/lib/hooks/useGame.ts)                         | <code>► INSERT-TEXT-HERE</code> |
-| [useQuiz.ts](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/lib/hooks/useQuiz.ts)                         | <code>► INSERT-TEXT-HERE</code> |
-| [useDecryptedAnswers.ts](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/lib/hooks/useDecryptedAnswers.ts) | <code>► INSERT-TEXT-HERE</code> |
-
-</details>
 
 ---
 
