@@ -317,6 +317,6 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 [**Jest Tyepecript and React example**](https://codermo.medium.com/setting-up-a-react-app-with-vite-typescript-jest-and-react-testing-library-e001ddce4f53)
 
-[**Animation in Tailwind **](https://v2.tailwindcss.com/docs/animation)
+[**Animation in Tailwind**](https://v2.tailwindcss.com/docs/animation)
 
 ---
