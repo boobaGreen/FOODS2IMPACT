@@ -34,7 +34,7 @@ export default function Success({ user, handleSetToQuiz }: TSucces) {
         <div className="flex justify-center">
           <p>Condividi il tuo successo su Twitter</p>
         </div>
-        <div className="flex justify-center text-customTurquese]">
+        <div className="flex justify-center text-customTurquese animate-bounce">
           <TwitterShareButton
             url={shareUrl}
             title={title}
