@@ -160,96 +160,96 @@ export type TUser = {
 
 <details closed><summary>.</summary>
 
-| File                                                                                                             | Summary                         |
-| ---------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| [tsconfig.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/tsconfig.json)           | <code>► INSERT-TEXT-HERE</code> |
-| [index.html](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/index.html)                 | <code>► INSERT-TEXT-HERE</code> |
-| [postcss.config.js](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/postcss.config.js)   | <code>► INSERT-TEXT-HERE</code> |
-| [encryptAnswers.js](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/encryptAnswers.js)   | <code>► INSERT-TEXT-HERE</code> |
-| [vite.config.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/vite.config.ts)         | <code>► INSERT-TEXT-HERE</code> |
-| [package.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/package.json)             | <code>► INSERT-TEXT-HERE</code> |
-| [tsconfig.node.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/tsconfig.node.json) | <code>► INSERT-TEXT-HERE</code> |
-| [tailwind.config.js](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/tailwind.config.js) | <code>► INSERT-TEXT-HERE</code> |
-| [package-lock.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/package-lock.json)   | <code>► INSERT-TEXT-HERE</code> |
+| File                                                                                            | Summary                         |
+| ----------------------------------------------------------------------------------------------- | ------------------------------- |
+| [tsconfig.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/tsconfig.json)           | <code>► INSERT-TEXT-HERE</code> |
+| [index.html](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/index.html)                 | <code>► INSERT-TEXT-HERE</code> |
+| [postcss.config.js](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/postcss.config.js)   | <code>► INSERT-TEXT-HERE</code> |
+| [encryptAnswers.js](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/encryptAnswers.js)   | <code>► INSERT-TEXT-HERE</code> |
+| [vite.config.ts](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/vite.config.ts)         | <code>► INSERT-TEXT-HERE</code> |
+| [package.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/package.json)             | <code>► INSERT-TEXT-HERE</code> |
+| [tsconfig.node.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/tsconfig.node.json) | <code>► INSERT-TEXT-HERE</code> |
+| [tailwind.config.js](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/tailwind.config.js) | <code>► INSERT-TEXT-HERE</code> |
+| [package-lock.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/package-lock.json)   | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
 
 <details closed><summary>src</summary>
 
-| File                                                                                                             | Summary                         |
-| ---------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| [EndGame.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/EndGame.tsx)           | <code>► INSERT-TEXT-HERE</code> |
-| [ScorePopup.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/ScorePopup.tsx)     | <code>► INSERT-TEXT-HERE</code> |
-| [Header.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Header.tsx)             | <code>► INSERT-TEXT-HERE</code> |
-| [Footer.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Footer.tsx)             | <code>► INSERT-TEXT-HERE</code> |
-| [Success.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Success.tsx)           | <code>► INSERT-TEXT-HERE</code> |
-| [Logo.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Logo.tsx)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Modal.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Modal.tsx)               | <code>► INSERT-TEXT-HERE</code> |
-| [main.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/main.tsx)                 | <code>► INSERT-TEXT-HERE</code> |
-| [vite-env.d.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/vite-env.d.ts)       | <code>► INSERT-TEXT-HERE</code> |
-| [UserInput.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/UserInput.tsx)       | <code>► INSERT-TEXT-HERE</code> |
-| [Layout.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Layout.tsx)             | <code>► INSERT-TEXT-HERE</code> |
-| [NoSuccess.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/NoSuccess.tsx)       | <code>► INSERT-TEXT-HERE</code> |
-| [App.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/App.tsx)                   | <code>► INSERT-TEXT-HERE</code> |
-| [Quiz.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/Quiz.tsx)                 | <code>► INSERT-TEXT-HERE</code> |
-| [index.css](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/index.css)               | <code>► INSERT-TEXT-HERE</code> |
-| [QuizQuestion.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/QuizQuestion.tsx) | <code>► INSERT-TEXT-HERE</code> |
+| File                                                                                            | Summary                         |
+| ----------------------------------------------------------------------------------------------- | ------------------------------- |
+| [EndGame.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/EndGame.tsx)           | <code>► INSERT-TEXT-HERE</code> |
+| [ScorePopup.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/ScorePopup.tsx)     | <code>► INSERT-TEXT-HERE</code> |
+| [Header.tsx](https://github.com/boobaGreen/FOODS2IMPACTblob/master/src/Header.tsx)              | <code>► INSERT-TEXT-HERE</code> |
+| [Footer.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/Footer.tsx)             | <code>► INSERT-TEXT-HERE</code> |
+| [Success.tsx](https://github.com/boobaGreen/FOODS2IMPACTblob/master/src/Success.tsx)            | <code>► INSERT-TEXT-HERE</code> |
+| [Logo.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/Logo.tsx)                 | <code>► INSERT-TEXT-HERE</code> |
+| [Modal.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/Modal.tsx)               | <code>► INSERT-TEXT-HERE</code> |
+| [main.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/main.tsx)                 | <code>► INSERT-TEXT-HERE</code> |
+| [vite-env.d.ts](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/vite-env.d.ts)       | <code>► INSERT-TEXT-HERE</code> |
+| [UserInput.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/UserInput.tsx)       | <code>► INSERT-TEXT-HERE</code> |
+| [Layout.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/Layout.tsx)             | <code>► INSERT-TEXT-HERE</code> |
+| [NoSuccess.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/NoSuccess.tsx)       | <code>► INSERT-TEXT-HERE</code> |
+| [App.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/App.tsx)                   | <code>► INSERT-TEXT-HERE</code> |
+| [Quiz.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/Quiz.tsx)                 | <code>► INSERT-TEXT-HERE</code> |
+| [index.css](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/index.css)               | <code>► INSERT-TEXT-HERE</code> |
+| [QuizQuestion.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/QuizQuestion.tsx) | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
 
 <details closed><summary>src.quiz.level1</summary>
 
-| File                                                                                                                                     | Summary                         |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| [solutionEncrypted.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level1/solutionEncrypted.json) | <code>► INSERT-TEXT-HERE</code> |
-| [quiz.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level1/quiz.ts)                               | <code>► INSERT-TEXT-HERE</code> |
-| [originalAnsewer.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level1/originalAnsewer.json)     | <code>► INSERT-TEXT-HERE</code> |
+| File                                                                                                                    | Summary                         |
+| ----------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| [solutionEncrypted.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/quiz/level1/solutionEncrypted.json) | <code>► INSERT-TEXT-HERE</code> |
+| [quiz.ts](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/quiz/level1/quiz.ts)                               | <code>► INSERT-TEXT-HERE</code> |
+| [originalAnsewer.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/quiz/level1/originalAnsewer.json)     | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
 
 <details closed><summary>src.quiz.level3</summary>
 
-| sFile                                                                                                                                    | Summary                         |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| [solutionEncrypted.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level3/solutionEncrypted.json) | <code>► INSERT-TEXT-HERE</code> |
-| [quiz.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level3/quiz.ts)                               | <code>► INSERT-TEXT-HERE</code> |
-| [originalAnsewer.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level3/originalAnsewer.json)     | <code>► INSERT-TEXT-HERE</code> |
+| sFile                                                                                                                   | Summary                         |
+| ----------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| [solutionEncrypted.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/quiz/level3/solutionEncrypted.json) | <code>► INSERT-TEXT-HERE</code> |
+| [quiz.ts](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/quiz/level3/quiz.ts)                               | <code>► INSERT-TEXT-HERE</code> |
+| [originalAnsewer.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/quiz/level3/originalAnsewer.json)     | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
 
 <details closed><summary>src.quiz.level2</summary>
 
-| File                                                                                                                                     | Summary                         |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| [solutionEncrypted.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level2/solutionEncrypted.json) | <code>► INSERT-TEXT-HERE</code> |
-| [quiz.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level2/quiz.ts)                               | <code>► INSERT-TEXT-HERE</code> |
-| [originalAnsewer.json](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/quiz/level2/originalAnsewer.json)     | <code>► INSERT-TEXT-HERE</code> |
+| File                                                                                                                    | Summary                         |
+| ----------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| [solutionEncrypted.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/quiz/level2/solutionEncrypted.json) | <code>► INSERT-TEXT-HERE</code> |
+| [quiz.ts](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/quiz/level2/quiz.ts)                               | <code>► INSERT-TEXT-HERE</code> |
+| [originalAnsewer.json](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/quiz/level2/originalAnsewer.json)     | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
 
 <details closed><summary>src.utils</summary>
 
-| File                                                                                                   | Summary                         |
-| ------------------------------------------------------------------------------------------------------ | ------------------------------- |
-| [utils.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/utils/utils.ts) | <code>► INSERT-TEXT-HERE</code> |
+| File                                                                                  | Summary                         |
+| ------------------------------------------------------------------------------------- | ------------------------------- |
+| [utils.ts](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/utils/utils.ts) | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
 
 <details closed><summary>src.lib.types</summary>
 
-| File                                                                                                         | Summary                         |
-| ------------------------------------------------------------------------------------------------------------ | ------------------------------- |
-| [types.tsx](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/lib/types/types.tsx) | <code>► INSERT-TEXT-HERE</code> |
+| File                                                                                        | Summary                         |
+| ------------------------------------------------------------------------------------------- | ------------------------------- |
+| [types.tsx](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/lib/types/types.tsx) | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
 
 <details closed><summary>src.lib.hooks</summary>
 
-| File                                                                                                                                   | Summary                         |
-| -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
-| [useGame.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/lib/hooks/useGame.ts)                         | <code>► INSERT-TEXT-HERE</code> |
-| [useQuiz.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/lib/hooks/useQuiz.ts)                         | <code>► INSERT-TEXT-HERE</code> |
-| [useDecryptedAnswers.ts](https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor/blob/master/src/lib/hooks/useDecryptedAnswers.ts) | <code>► INSERT-TEXT-HERE</code> |
+| File                                                                                                                  | Summary                         |
+| --------------------------------------------------------------------------------------------------------------------- | ------------------------------- |
+| [useGame.ts](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/lib/hooks/useGame.ts)                         | <code>► INSERT-TEXT-HERE</code> |
+| [useQuiz.ts](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/lib/hooks/useQuiz.ts)                         | <code>► INSERT-TEXT-HERE</code> |
+| [useDecryptedAnswers.ts](https://github.com/boobaGreen/FOODS2IMPACT/blob/master/src/lib/hooks/useDecryptedAnswers.ts) | <code>► INSERT-TEXT-HERE</code> |
 
 </details>
 
@@ -269,13 +269,13 @@ Ensure you have the following dependencies installed on your system:
 1. Clone the S2ImpactTriviaReactTSRefactor repository:
 
 ```sh
-git clone https://github.com/boobaGreen/S2ImpactTriviaReactTSRefactor
+git clone https://github.com/boobaGreen/FOODS2IMPACT
 ```
 
 2. Change to the project directory:
 
 ```sh
-cd S2ImpactTriviaReactTSRefactor
+cd FOODS2IMPACT
 ```
 
 3. Install the dependencies:
