@@ -8,6 +8,7 @@ import { Quiz } from "./Quiz";
 import EndGame from "./EndGame";
 import Layout from "../components/Layout";
 import Modal from "../components/Modal";
+import Instructions from "../components/Instructions";
 import UserInput from "../elements/UserInput";
 
 // Main App component
@@ -43,11 +44,9 @@ const App = () => {
   // Handler for confirming user removal
   const confirmRemoveUser = () => {
     removeUser();
-    // setUser({ name: "", singleGamePoints: 0, level: 0 });
     setInputValue(""); // Clear the input field
     setGameStatus(GameStatus.Cover);
     setShowConfirmationModal(false);
-    // qui mettiamo un reload della pagina
   };
 
   // Handler for cancelling user removal
@@ -64,11 +63,14 @@ const App = () => {
   return (
     <Layout user={user} handleRemoveUser={handleRemoveUser}>
       {user?.name === "" ? (
-        <UserInput
-          handleSubmit={handleSubmit}
-          handleInputChange={handleInputChange}
-          inputValue={inputValue} // Pass the input value state here
-        />
+        <>
+          <UserInput
+            handleSubmit={handleSubmit}
+            handleInputChange={handleInputChange}
+            inputValue={inputValue} // Pass the input value state here
+          />
+          <Instructions /> {/* Include the Instructions component */}
+        </>
       ) : (
         <>
           {gameStatus === "quiz" ? (

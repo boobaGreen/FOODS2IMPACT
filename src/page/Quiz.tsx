@@ -28,7 +28,7 @@ export const Quiz: React.FC<TQuizProps> = ({
 
   // Effect hook to load the quiz for the current level
   useEffect(() => {
-    import(`./quiz/level${user.level}/quiz.ts`)
+    import(`../quiz/level${user.level}/quiz.ts`)
       .then((module) => {
         setQuiz(module.quiz);
         if (currentQuestion >= module.quiz.length) {
