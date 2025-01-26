@@ -1,10 +1,10 @@
 // Importing necessary libraries and components
 import { FC } from "react";
 
-import { GameStatus, TUser } from "./lib/types/types";
+import { GameStatus, TUser } from "../lib/types/types";
 
-import NoSuccess from "./NoSuccess";
-import Success from "./Success";
+import NoSuccess from "../components/NoSuccess";
+import Success from "../components/Success";
 
 // Type definition for the props of EndGame component
 type EndQuizProps = {

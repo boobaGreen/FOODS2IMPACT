@@ -1,6 +1,6 @@
 // Importing necessary libraries and components
 import { ReactNode } from "react";
-import { TUser } from "./lib/types/types";
+import { TUser } from "../lib/types/types";
 
 import Footer from "./Footer";
 import Header from "./Header";

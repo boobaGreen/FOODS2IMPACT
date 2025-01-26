@@ -2,13 +2,13 @@
 import { SetStateAction, useEffect, useState } from "react";
 import { useLocalStorage } from "usehooks-ts";
 
-import { GameStatus, TUser } from "./lib/types/types";
+import { GameStatus, TUser } from "../lib/types/types";
 
-import Layout from "./Layout";
 import { Quiz } from "./Quiz";
-import UserInput from "./UserInput";
 import EndGame from "./EndGame";
-import Modal from "./Modal";
+import Layout from "../components/Layout";
+import Modal from "../components/Modal";
+import UserInput from "../elements/UserInput";
 
 // Main App component
 const App = () => {
@@ -67,7 +67,7 @@ const App = () => {
         <UserInput
           handleSubmit={handleSubmit}
           handleInputChange={handleInputChange}
-          inputValue={""}
+          inputValue={inputValue} // Pass the input value state here
         />
       ) : (
         <>

@@ -1,8 +1,8 @@
 // Importing necessary libraries and components
 import { FaTrash } from "react-icons/fa";
-import { TUser } from "./lib/types/types";
+import { TUser } from "../lib/types/types";
 import { ReactNode } from "react";
-import Logo from "./Logo";
+import Logo from "../elements/Logo";
 
 // Type definition for the props of Header component
 type THeader = {

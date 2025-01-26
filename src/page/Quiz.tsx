@@ -1,10 +1,10 @@
 // Importing necessary libraries and components
 import React, { useState, useEffect } from "react";
-import QuizQuestion from "./QuizQuestion";
-import useDecryptedAnswers from "./lib/hooks/useDecryptedAnswers";
-import ScorePopup from "./ScorePopup";
-import { GameStatus } from "./lib/types/types";
-import { TUser } from "./lib/types/types";
+import useDecryptedAnswers from "../lib/hooks/useDecryptedAnswers";
+import { GameStatus } from "../lib/types/types";
+import { TUser } from "../lib/types/types";
+import QuizQuestion from "../elements/QuizQuestion";
+import ScorePopup from "../elements/ScorePopup";
 
 // Type definition for the props of Quiz component
 type TQuizProps = {

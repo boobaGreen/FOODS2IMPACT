@@ -1,7 +1,7 @@
 // Importing necessary libraries and icons
 import { TwitterShareButton } from "react-share";
 import { FiTwitter } from "react-icons/fi";
-import { TUser } from "./lib/types/types";
+import { TUser } from "../lib/types/types";
 
 // Type definition for the props of Success component
 type TSucces = {
