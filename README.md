@@ -31,7 +31,7 @@
 ## 🔗 Quick Links
 
 > - [📍 Overview](#-overview)
-> - [📦 Features](#-features)
+>   - [📦 Key Features](#-key-features)
 > - [📚 Types](#-types)
 > - [📂 Repository Structure](#-repository-structure)
 > - [🧩 Modules](#-modules)
@@ -48,19 +48,17 @@
 
 ## 📍 Overview
 
-<code>► </code> S2ImpactTriviaReactTSRefactor is an interactive trivia game built with React and TypeScript. The game challenges users with questions on various topics, tracks their scores, and advances them through levels based on their performance. The application uses local storage to save user progress and employs custom hooks for managing state and decrypting answers.
+S2ImpactTriviaReactTSRefactor is an interactive trivia game built with React and TypeScript. The game challenges users with questions on various topics, tracks their scores, and advances them through levels based on their performance. The application uses local storage to save user progress and employs custom hooks for managing state and decrypting answers.
 
----
+### 📦 Key Features
 
-## 📦 Features
-
-<code>► </code> Interactive trivia game with multiple levels
-<code>► </code> User progress tracking with local storage
-<code>► </code> Custom hooks for state management and answer decryption
-<code>► </code> Responsive design with Tailwind CSS
-<code>► </code> Integration with Jest for testing React components
-<code>► </code> Ability to share scores on Twitter
-<code>► </code> Deployed on Vercel for live hosting
+- Interactive trivia game with multiple levels
+- User progress tracking with local storage
+- Custom hooks for state management and answer decryption
+- Responsive design with Tailwind CSS
+- Integration with Jest for testing React components
+- Ability to share scores on Twitter
+- Deployed on Vercel for live hosting
 
 ---
 
