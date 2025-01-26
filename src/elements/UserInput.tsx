@@ -25,7 +25,7 @@ export default function UserInput({
           onChange={handleInputChange}
           value={inputValue} // Bind the input value
           placeholder="Inserisci un Nome"
-          className="bg-customGrey text-white p-2 rounded"
+          className="bg-customGrey text-white p-2 rounded font-press-start"
           maxLength={10}
         />
       </div>
@@ -39,7 +39,7 @@ export default function UserInput({
           <FaPlay className="text-customGrey" />
         </button>
         <div className="flex items-center justify-center mt-2 text-customGrey font-bold">
-          <p>START</p>
+          <p className="font-press-start">START</p>
         </div>
       </div>
     </div>
