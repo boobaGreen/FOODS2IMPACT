@@ -32,12 +32,14 @@ export const Quiz: React.FC<TQuizProps> = ({
       .then((module) => {
         setQuiz(module.quiz);
         if (currentQuestion >= module.quiz.length) {
-          if (user.singleGamePoints > 7) {
+          if (user.singleGamePoints >= 6) {
             setUser((prevUser: TUser) => {
               let newLevel = prevUser.level + 1;
+              console.log(newLevel);
               if (newLevel > 3) {
                 newLevel = 1;
               }
+              console.log("2", newLevel);
               return { ...prevUser, level: newLevel };
             });
           }

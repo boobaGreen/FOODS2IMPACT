@@ -13,7 +13,7 @@ const key = process.env.VITE_KEY_DECRYPTION;
 // Define a function to encrypt answers
 const encryptAnswers = (level) => {
   // File containing the unencrypted correct answers
-  const filePath = `./src/quiz/level${level}/originalAnsewer.json`;
+  const filePath = `./src/quiz/level${level}/originalAnswer.json`;
 
   // Read the content of the JSON file
   const rawData = fs.readFileSync(filePath, "utf8");

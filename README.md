@@ -37,6 +37,7 @@
 > - [🚀 Getting Started](#-getting-started)
 >   - [⚙️ Installation](#️-installation)
 >   - [🤖 Running S2ImpactTriviaReactTSRefactor](#-running-S2ImpactTriviaReactTSRefactor)
+>   - [🔧 Customizing Questions and Levels](#️-customizing-questions-and-levels)
 >   - [🧪 Tests](#-tests)
 > - [🛠 Project Roadmap](#-project-roadmap)
 > - [🤝 Contributing](#-contributing)
@@ -310,6 +311,60 @@ VITE_KEY_DECRYPTION="forzacesenalaserieAnoncibastapiuvogliamlachampionsleaguewsb
 ```
 
 which should contain your own secret key for decryption. Since this is a study project, I have left the key visible in a `.envfake` file. You can simply rename it to `.env` and use my decryption password. I have left it visible only because this is a study project.
+
+### 🔧 Customizing Questions and Levels
+
+To customize the questions and levels, follow these steps:
+
+1.  **Create Question Files**: Create JSON files for each level containing the questions. The files should be named `originalAnswer.json` and placed in the respective level directories:
+    ``   -`./src/quiz/level1/originalAnswer.json`        -`./src/quiz/level2/originalAnswer.json`        -`./src/quiz/level3/originalAnswer.json```
+
+Each file should contain an array of questions in the following format:
+
+            ```
+            [
+              {
+                "question": "Your question here?",
+                "answers": [
+                  "Answer 1",
+                  "Answer 2",
+                  "Answer 3",
+                  "Answer 4"
+                ]
+              },
+              ...
+            ]
+            ```
+
+2.  **Create Question Files**: Create JSON files for each level containing the questions. The files should be named `originalAnswer.json` and placed in the respective level directories:
+
+            - `./src/quiz/level1/originalAnswer.json`
+            - `./src/quiz/level2/originalAnswer.json`
+            - `./src/quiz/level3/originalAnswer.json`
+
+Each file should contain an array of correct answers in the following format:
+
+            ```
+            [
+
+            "Correct answer for question 1",
+            "Correct answer for question 2",
+            "ecc"
+            ]
+
+            ```
+
+3.  **Encrypt the Answers**: Run the encryption script to encrypt the correct answers. This will create encrypted answer files in the respective level directories.
+
+            node src/lib/encryptAnswers.js
+
+You should see the following output:
+
+            Correct answers successfully encrypted!
+
+4.  **Decryption Key**: The decryption key is specified in the .env file as explained in the installation step 4. This key is used to encrypt and decrypt the answers, ensuring that even advanced users cannot easily find the correct answers without the key.
+
+By following these steps, you can customize the questions and levels while ensuring that the correct answers are securely encrypted. This prevents users from easily accessing the correct answers without the decryption key.
 
 ### 🤖 Running FOODS2IMPACT
 

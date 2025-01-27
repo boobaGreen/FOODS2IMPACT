@@ -1,101 +1,102 @@
 export const quiz = [
   {
     question:
-      "Quale impatto ha il consumo eccessivo di carne sull'uso delle risorse idriche?",
+      "Qual è l'impatto dell'uso di fertilizzanti sintetici sull'ecosistema acquatico?",
     answers: [
-      "Aumento del consumo di acqua",
-      "Nessun impatto sull'uso delle risorse idriche",
-      "Riduzione del consumo di acqua",
-      "Aumento della disponibilità di acqua",
+      "Eutrofizzazione e fioriture algali",
+      "Aumento della biodiversità acquatica",
+      "Riduzione dell'inquinamento delle acque",
+      "Miglioramento della qualità dell'acqua",
     ],
   },
   {
     question:
-      "Quanto contribuisce l'allevamento del bestiame alle emissioni di gas serra?",
+      "Quali sono le conseguenze a lungo termine dell'erosione del suolo causata dall'agricoltura intensiva?",
     answers: [
-      "Significativo contributo alle emissioni totali",
-      "Contributo minimo alle emissioni totali",
-      "Riduzione delle emissioni totali",
-      "Nessun contributo alle emissioni totali",
+      "Perdita di fertilità del suolo e desertificazione",
+      "Aumento della produzione agricola",
+      "Riduzione della necessità di irrigazione",
+      "Miglioramento della qualità del suolo",
     ],
   },
   {
     question:
-      "Quali sono i rischi ambientali associati all'allevamento intensivo di animali?",
+      "Qual è l'effetto dell'uso di OGM sull'ambiente e sulla biodiversità?",
     answers: [
-      "Inquinamento delle acque e dell'aria",
-      "Riduzione dell'impatto ambientale",
+      "Possibile riduzione della biodiversità e contaminazione genetica",
       "Aumento della biodiversità",
-      "Miglioramento della qualità dell'aria",
+      "Nessun impatto sull'ambiente",
+      "Miglioramento della qualità del suolo",
     ],
   },
   {
     question:
-      "Qual è l'effetto dell'allevamento intensivo di pollame sull'ambiente?",
+      "Quali sono le pratiche agricole che possono contribuire alla mitigazione del cambiamento climatico?",
     answers: [
-      "Inquinamento delle acque dovuto agli escrementi",
-      "Riduzione delle emissioni di gas serra",
-      "Miglioramento della qualità dell'aria",
-      "Aumento della biodiversità",
+      "Agroforestazione e agricoltura di conservazione",
+      "Aumento dell'uso di fertilizzanti chimici",
+      "Deforestazione per nuove coltivazioni",
+      "Intensificazione dell'uso di pesticidi",
     ],
   },
   {
     question:
-      "Qual è l'importanza della riduzione del consumo di carne per mitigare il cambiamento climatico?",
+      "Qual è l'impatto dell'agricoltura intensiva sulla qualità dell'aria?",
     answers: [
-      "Riduzione dell'emissione di gas serra",
-      "Aumento della deforestazione",
-      "Minore impatto sull'ambiente",
-      "Aumento della biodiversità",
+      "Emissione di gas serra e particolato",
+      "Riduzione dell'inquinamento atmosferico",
+      "Aumento della qualità dell'aria",
+      "Nessun impatto sulla qualità dell'aria",
     ],
   },
   {
     question:
-      "Quale impatto ha l'allevamento intensivo di animali sull'uso di antibiotici?",
+      "Quali sono le tecniche di irrigazione sostenibili che possono ridurre l'uso di acqua in agricoltura?",
     answers: [
-      "Aumento della resistenza agli antibiotici",
-      "Minimizzazione dell'inquinamento delle acque",
-      "Riduzione delle emissioni di gas serra",
-      "Miglioramento della salute degli animali",
+      "Irrigazione a goccia e sistemi di raccolta dell'acqua piovana",
+      "Irrigazione a pioggia e uso di acque reflue non trattate",
+      "Aumento dell'irrigazione a pioggia",
+      "Nessuna tecnica sostenibile disponibile",
     ],
   },
   {
     question:
-      "Qual è l'alternativa sostenibile per ridurre l'impatto ambientale dell'allevamento del bestiame?",
+      "Qual è l'effetto dell'agricoltura intensiva sulla salute del suolo?",
     answers: [
-      "Promozione di pratiche di pascolo rigenerative",
+      "Degradazione del suolo e perdita di materia organica",
+      "Miglioramento della fertilità del suolo",
+      "Aumento della biodiversità del suolo",
+      "Riduzione della necessità di fertilizzanti",
+    ],
+  },
+  {
+    question:
+      "Quali sono le alternative all'uso di pesticidi chimici per il controllo delle infestazioni?",
+    answers: [
+      "Controllo biologico e rotazione delle colture",
       "Aumento dell'uso di pesticidi sintetici",
-      "Aumento della deforestazione",
-      "Minimizzazione dell'uso di acqua",
-    ],
-  },
-  {
-    question: "Quale impatto ha il consumo consapevole di carne sull'ambiente?",
-    answers: [
-      "Riduzione dell'emissione di gas serra",
-      "Aumento della deforestazione",
-      "Minore impatto sull'ambiente",
-      "Aumento della biodiversità",
+      "Nessuna alternativa disponibile",
+      "Uso di pesticidi organici",
     ],
   },
   {
     question:
-      "Qual è il principale motivo dell'aumento della deforestazione correlato all'allevamento del bestiame?",
+      "Qual è l'impatto dell'agricoltura intensiva sulla disponibilità di risorse idriche?",
     answers: [
-      "Espansione delle coltivazioni di soia e di pascoli",
-      "Estensione dei parchi nazionali",
-      "Miglioramenti nelle tecniche di riciclaggio della carta",
-      "Nessuna alternativa disponibile, l'allevamento intensivo è indispensabile per la produzione alimentare",
+      "Sovrasfruttamento delle risorse idriche e riduzione della disponibilità",
+      "Aumento della disponibilità di acqua",
+      "Nessun impatto sulle risorse idriche",
+      "Miglioramento della qualità dell'acqua",
     ],
   },
   {
     question:
-      "Quale impatto ha l'allevamento intensivo di animali sulla biodiversità?",
+      "Quali sono le conseguenze dell'uso eccessivo di fertilizzanti chimici sull'ambiente?",
     answers: [
-      "Riduzione della biodiversità",
+      "Inquinamento delle acque e degradazione del suolo",
+      "Miglioramento della qualità del suolo",
       "Aumento della biodiversità",
-      "Nessun impatto sulla biodiversità",
-      "Miglioramento della biodiversità solo negli ecosistemi circostanti",
+      "Riduzione dell'inquinamento delle acque",
     ],
   },
 ];
