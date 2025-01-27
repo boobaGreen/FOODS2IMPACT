@@ -50,6 +50,8 @@
 
 S2ImpactTriviaReactTSRefactor is an interactive trivia game built with React and TypeScript. The game challenges users with questions on various topics, tracks their scores, and advances them through levels based on their performance. The application uses local storage to save user progress and employs custom hooks for managing state and decrypting answers.
 
+You can try the application deployed at: [https://foods-2-impact.vercel.app/](https://foods-2-impact.vercel.app/)
+
 ### 📦 Key Features
 
 - Interactive trivia game with multiple levels
