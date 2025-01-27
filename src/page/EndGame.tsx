@@ -3,8 +3,7 @@ import { FC } from "react";
 
 import { GameStatus, TUser } from "../lib/types/types";
 
-import NoSuccess from "../components/NoSuccess";
-import Success from "../components/Success";
+import Result from "../components/Result";
 
 // Type definition for the props of EndGame component
 type EndQuizProps = {
@@ -27,11 +26,14 @@ const EndGame: FC<EndQuizProps> = ({ user, setGameStatus, setUser }) => {
       className="text-white flex justify-center font-press-start text-base"
       data-testid="endgame-component"
     >
-      {user.singleGamePoints >= 6 ? (
+      {/* {user.singleGamePoints >= 6 ? (
         <Success user={user} handleSetToQuiz={handleSetToQuiz} />
       ) : (
         <NoSuccess handleSetToQuiz={handleSetToQuiz} />
-      )}
+      )} */}
+      <div>
+        <Result user={user} handleSetToQuiz={handleSetToQuiz} />
+      </div>
     </div>
   );
 };

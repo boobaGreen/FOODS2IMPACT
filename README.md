@@ -300,22 +300,12 @@ export type EndQuizProps = {
 
 ### TSucces Type
 
-This type represents the props for the Success component.
+This type represents the props for the Result component.
 
 ```typescript
-export type TSucces = {
-  user: TUser; // The user object
-  handleSetToQuiz: () => void; // Function to set the game status to quiz
-};
-```
-
-### TNoSucces Type
-
-This type represents the props for the NoSuccess component.
-
-```typescript
-export type TNoSucces = {
-  handleSetToQuiz: () => void; // Function to set the game status to quiz
+type TResult = {
+  user: TUser;
+  handleSetToQuiz: () => void;
 };
 ```
 
