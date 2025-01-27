@@ -32,13 +32,13 @@
 
 > - [📍 Overview](#-overview)
 >   - [📦 Key Features](#-key-features)
-> - [📚 Types](#-types)
 > - [📂 Repository Structure](#-repository-structure)
 > - [🚀 Getting Started](#-getting-started)
 >   - [⚙️ Installation](#️-installation)
 >   - [🤖 Running S2ImpactTriviaReactTSRefactor](#-running-S2ImpactTriviaReactTSRefactor)
 >   - [🔧 Customizing Questions and Levels](#️-customizing-questions-and-levels)
 >   - [🧪 Tests](#-tests)
+> - [📚 Types](#-types)
 > - [🛠 Project Roadmap](#-project-roadmap)
 > - [🤝 Contributing](#-contributing)
 > - [📄 License](#-license)
@@ -59,153 +59,6 @@ S2ImpactTriviaReactTSRefactor is an interactive trivia game built with React and
 - Integration with Jest for testing React components
 - Ability to share scores on Twitter
 - Deployed on Vercel for live hosting
-
----
-
-## 📚 Types
-
-### GameStatus Enum
-
-This enum represents the different states that the game can be in.
-
-```typescript
-export enum GameStatus {
-  Quiz = "quiz", // The game is in the quiz state , the quiz started
-  EndGame = "endGame", // The game is in the end game state , the quiz is just ended
-  Cover = "cover", // The game is in the cover initial state
-}
-```
-
-### TUser Type
-
-This type represents a user in the game.
-
-```typescript
-export type TUser = {
-  name: string; // The name of the user
-  singleGamePoints: number; // The points the user has scored in a single game
-  level: number; // The current level of the user in the game (min level 1,max level 3)
-};
-```
-
-### SocialLink Interface
-
-This interface represents a social media link.
-
-```typescript
-export interface SocialLink {
-  id: number; // The unique identifier for the social link
-  icon: JSX.Element; // The icon representing the social media platform
-  url: string; // The URL of the social media profile or page
-}
-```
-
-### THeader Type
-
-This type represents the props for the Header component.
-
-```typescript
-export type THeader = {
-  user: TUser; // The user object
-  children: ReactNode; // The children elements
-  handleRemoveUser: () => void; // Function to handle user removal
-};
-```
-
-### TLayout Type
-
-This type represents the props for the Layout component.
-
-```typescript
-export type TLayout = {
-  user: TUser; // The user object
-  children: ReactNode; // The children elements
-  handleRemoveUser: () => void; // Function to handle user removal
-};
-```
-
-### TModal Type
-
-This type represents the props for the Modal component.
-
-```typescript
-export type TModal = {
-  confirmRemoveUser: () => void; // Function to confirm user removal
-  cancelRemoveUser: () => void; // Function to cancel user removal
-};
-```
-
-### EndQuizProps Type
-
-This type represents the props for the EndGame component.
-
-```typescript
-export type EndQuizProps = {
-  user: TUser; // The user object
-  setGameStatus: React.Dispatch<React.SetStateAction<GameStatus>>; // Function to set the game status
-  setUser: React.Dispatch<React.SetStateAction<TUser>>; // Function to set the user
-};
-```
-
-### TSucces Type
-
-This type represents the props for the Success component.
-
-```typescript
-export type TSucces = {
-  user: TUser; // The user object
-  handleSetToQuiz: () => void; // Function to set the game status to quiz
-};
-```
-
-### TNoSucces Type
-
-This type represents the props for the NoSuccess component.
-
-```typescript
-export type TNoSucces = {
-  handleSetToQuiz: () => void; // Function to set the game status to quiz
-};
-```
-
-### TQuizQuestionProps Type
-
-This type represents the props for the QuizQuestion component.
-
-```typescript
-export type TQuizQuestionProps = {
-  question: string; // The quiz question
-  answers: string[]; // The possible answers for the question
-  questionNumber: number; // The current question number
-  totalQuestions: number; // The total number of questions
-  onConfirm: (selectedAnswer: string) => void; // Function to handle answer confirmation
-};
-```
-
-### ScorePopupProps Type
-
-This type represents the props for the ScorePopup component.
-
-```typescript
-export type ScorePopupProps = {
-  forPopUp: boolean; // Indicates whether the popup is for a correct answer
-  color: string; // The color of the popup
-};
-```
-
-### TuserInput Type
-
-This type represents the props for the UserInput component.
-
-```typescript
-export type TuserInput = {
-  handleInputChange: (event: {
-    target: { value: SetStateAction<string> };
-  }) => void; // Function to handle input change
-  handleSubmit: () => void; // Function to handle form submission
-  inputValue: string; // The input value
-};
-```
 
 ---
 
@@ -356,6 +209,153 @@ or for test-watch mode
 
 ```sh
 npm run watch
+```
+
+---
+
+## 📚 Types
+
+### GameStatus Enum
+
+This enum represents the different states that the game can be in.
+
+```typescript
+export enum GameStatus {
+  Quiz = "quiz", // The game is in the quiz state , the quiz started
+  EndGame = "endGame", // The game is in the end game state , the quiz is just ended
+  Cover = "cover", // The game is in the cover initial state
+}
+```
+
+### TUser Type
+
+This type represents a user in the game.
+
+```typescript
+export type TUser = {
+  name: string; // The name of the user
+  singleGamePoints: number; // The points the user has scored in a single game
+  level: number; // The current level of the user in the game (min level 1,max level 3)
+};
+```
+
+### SocialLink Interface
+
+This interface represents a social media link.
+
+```typescript
+export interface SocialLink {
+  id: number; // The unique identifier for the social link
+  icon: JSX.Element; // The icon representing the social media platform
+  url: string; // The URL of the social media profile or page
+}
+```
+
+### THeader Type
+
+This type represents the props for the Header component.
+
+```typescript
+export type THeader = {
+  user: TUser; // The user object
+  children: ReactNode; // The children elements
+  handleRemoveUser: () => void; // Function to handle user removal
+};
+```
+
+### TLayout Type
+
+This type represents the props for the Layout component.
+
+```typescript
+export type TLayout = {
+  user: TUser; // The user object
+  children: ReactNode; // The children elements
+  handleRemoveUser: () => void; // Function to handle user removal
+};
+```
+
+### TModal Type
+
+This type represents the props for the Modal component.
+
+```typescript
+export type TModal = {
+  confirmRemoveUser: () => void; // Function to confirm user removal
+  cancelRemoveUser: () => void; // Function to cancel user removal
+};
+```
+
+### EndQuizProps Type
+
+This type represents the props for the EndGame component.
+
+```typescript
+export type EndQuizProps = {
+  user: TUser; // The user object
+  setGameStatus: React.Dispatch<React.SetStateAction<GameStatus>>; // Function to set the game status
+  setUser: React.Dispatch<React.SetStateAction<TUser>>; // Function to set the user
+};
+```
+
+### TSucces Type
+
+This type represents the props for the Success component.
+
+```typescript
+export type TSucces = {
+  user: TUser; // The user object
+  handleSetToQuiz: () => void; // Function to set the game status to quiz
+};
+```
+
+### TNoSucces Type
+
+This type represents the props for the NoSuccess component.
+
+```typescript
+export type TNoSucces = {
+  handleSetToQuiz: () => void; // Function to set the game status to quiz
+};
+```
+
+### TQuizQuestionProps Type
+
+This type represents the props for the QuizQuestion component.
+
+```typescript
+export type TQuizQuestionProps = {
+  question: string; // The quiz question
+  answers: string[]; // The possible answers for the question
+  questionNumber: number; // The current question number
+  totalQuestions: number; // The total number of questions
+  onConfirm: (selectedAnswer: string) => void; // Function to handle answer confirmation
+};
+```
+
+### ScorePopupProps Type
+
+This type represents the props for the ScorePopup component.
+
+```typescript
+export type ScorePopupProps = {
+  forPopUp: boolean; // Indicates whether the popup is for a correct answer
+  color: string; // The color of the popup
+};
+```
+
+### TuserInput Type
+
+This type represents the props for the UserInput component.
+
+```typescript
+export type TuserInput = {
+  handleInputChange: (event: {
+    target: { value: SetStateAction<string> };
+  }) => void; // Function to handle input change
+  handleSubmit: () => void; // Function to handle form submission
+  inputValue: string; // The input value
+};
 ```
 
 ---
