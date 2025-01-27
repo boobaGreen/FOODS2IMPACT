@@ -212,60 +212,30 @@ export type TuserInput = {
 ## 📂 Repository Structure
 
 ```sh
-└── S2ImpactTriviaReactTSRefactor/
+└── FOODS2IMPACT/
     ├── README.md
-    ├── encryptAnswers.js
+    ├── __mocks__
+    │   ├── fileMock.js
+    │   └── useDecryptedAnswers.ts
     ├── favicon.ico
     ├── index.html
+    ├── jest.config.tss
     ├── package-lock.json
     ├── package.json
     ├── postcss.config.js
     ├── public
     │   ├── favicon.ico
     │   └── font
-    │       ├── ScriptSheep.ttf
-    │       ├── ScriptofSheep.eot
-    │       ├── ScriptofSheep.ttf
-    │       ├── ScriptofSheep.woff
-    │       └── ScriptofSheep.woff2
+    ├── setupTests.ts
     ├── src
-    │   ├── App.tsx
-    │   ├── EndGame.tsx
-    │   ├── Footer.tsx
-    │   ├── Header.tsx
-    │   ├── Layout.tsx
-    │   ├── Logo.tsx
-    │   ├── Modal.tsx
-    │   ├── NoSuccess.tsx
-    │   ├── Quiz.tsx
-    │   ├── QuizQuestion.tsx
-    │   ├── ScorePopup.tsx
-    │   ├── Success.tsx
-    │   ├── UserInput.tsx
+    │   ├── __tests__
+    │   ├── components
+    │   ├── elements
     │   ├── index.css
     │   ├── lib
-    │   │   ├── hooks
-    │   │   │   ├── useDecryptedAnswers.ts
-    │   │   │   ├── useGame.ts
-    │   │   │   └── useQuiz.ts
-    │   │   └── types
-    │   │       └── types.tsx
     │   ├── main.tsx
+    │   ├── page
     │   ├── quiz
-    │   │   ├── level1
-    │   │   │   ├── originalAnsewer.json
-    │   │   │   ├── quiz.ts
-    │   │   │   └── solutionEncrypted.json
-    │   │   ├── level2
-    │   │   │   ├── originalAnsewer.json
-    │   │   │   ├── quiz.ts
-    │   │   │   └── solutionEncrypted.json
-    │   │   └── level3
-    │   │       ├── originalAnsewer.json
-    │   │       ├── quiz.ts
-    │   │       └── solutionEncrypted.json
-    │   ├── utils
-    │   │   └── utils.ts
     │   └── vite-env.d.ts
     ├── tailwind.config.js
     ├── tsconfig.json
