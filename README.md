@@ -374,7 +374,7 @@ export type TuserInput = {
 - [x] Deploy the application on Vercel for live hosting
 - [x] Refine and review the README file
 - [x] Prepare the presentation
-- [ ] Add tests and continue experimenting with Jest on React for both layout and calculations, including mockups
+- [ ] Add tests and continue experimenting with Jest on React for Unit tests, Integration tests and E2E tests.
 
 ---
 
