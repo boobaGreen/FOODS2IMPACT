@@ -1,7 +1,7 @@
-// Importing necessary libraries
+
 import { useState } from "react";
 
-// Type definition for the props of QuizQuestion component
+
 type TQuizQuestionProps = {
   question: string;
   answers: string[];
@@ -10,7 +10,7 @@ type TQuizQuestionProps = {
   onConfirm: (selectedAnswer: string) => void;
 };
 
-// QuizQuestion component
+
 const QuizQuestion: React.FC<TQuizQuestionProps> = ({
   question,
   answers,
@@ -18,15 +18,15 @@ const QuizQuestion: React.FC<TQuizQuestionProps> = ({
   totalQuestions,
   onConfirm,
 }) => {
-  // State variable for the selected answer
+
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
 
-  // Function to handle the click on an answer
+
   const handleAnswerClick = (answer: string) => {
     setSelectedAnswer(answer);
   };
 
-  // Function to handle the click on the confirm button
+
   const handleConfirmClick = () => {
     if (selectedAnswer) {
       onConfirm(selectedAnswer);
@@ -34,7 +34,7 @@ const QuizQuestion: React.FC<TQuizQuestionProps> = ({
     }
   };
 
-  // Rendering the QuizQuestion component
+
   return (
     <div className="flex flex-col h-full mt-2">
       <h3 className="text-xs text-customDark text-pretty mb-2 font-press-start ">
@@ -76,5 +76,4 @@ const QuizQuestion: React.FC<TQuizQuestionProps> = ({
   );
 };
 
-// Exporting the QuizQuestion component
 export default QuizQuestion;

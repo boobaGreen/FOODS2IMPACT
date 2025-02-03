@@ -1,12 +1,12 @@
-// Type definition for the props of Modal component
+
 type TModal = {
   confirmRemoveUser: () => void;
   cancelRemoveUser: () => void;
 };
 
-// Modal component
+
 export default function Modal({ confirmRemoveUser, cancelRemoveUser }: TModal) {
-  // Rendering a modal with confirmation and cancellation buttons
+  
   return (
     <div className="fixed inset-0  flex items-center justify-center z-50 shadow-xl opacity-90">
       <div className="bg-customTurquese p-6 rounded-lg ">

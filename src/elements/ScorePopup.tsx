@@ -1,25 +1,23 @@
-// Importing necessary libraries and icons
+
 import { useState, useEffect } from "react";
 import { FaRegSmileBeam, FaGrinTongueSquint } from "react-icons/fa";
 
-// Type definition for the props of ScorePopup component
+
 type ScorePopupProps = {
   forPopUp: boolean;
   color: string;
 };
 
-// ScorePopup component
+
 const ScorePopup: React.FC<ScorePopupProps> = ({ forPopUp, color }) => {
-  // State variable for the opacity of the popup
+
   const [opacity, setOpacity] = useState(0);
 
-  // useEffect hook to handle the fading of the popup
   useEffect(() => {
     setOpacity(1);
     setTimeout(() => setOpacity(0), 2000); // Fade out the popup after 2 seconds
   }, []);
 
-  // Rendering the ScorePopup component
   return (
     <div
       style={{ opacity: opacity, color: color }} // Inline CSS to handle the opacity and color
@@ -44,5 +42,4 @@ const ScorePopup: React.FC<ScorePopupProps> = ({ forPopUp, color }) => {
   );
 };
 
-// Exporting the ScorePopup component
 export default ScorePopup;
