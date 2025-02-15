@@ -1,4 +1,3 @@
-
 import { FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
 
 interface SocialLink {
@@ -6,7 +5,6 @@ interface SocialLink {
   icon: JSX.Element;
   url: string;
 }
-
 
 const socialLinks: SocialLink[] = [
   {
@@ -26,12 +24,9 @@ const socialLinks: SocialLink[] = [
   },
 ];
 
-
 function Footer(): JSX.Element {
- 
   const currentYear = new Date().getFullYear();
 
- 
   return (
     <div className="w-full font-press-start ">
       <div className="flex flex-col items-center justify-center w-full ">
